@@ -1,4 +1,5 @@
-import React, { useState, ChangeEvent, FormEvent } from "react";
+"use client";
+import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
 
 interface FormData {
   eventName: string;
@@ -50,8 +51,15 @@ const Dashboard: React.FC = () => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const authToken = localStorage.getItem("yourAuthToken"); // Replace with your storage key
+  const [authToken, setAuthToken] = useState<string | null>(null);
 
+  useEffect(() => {
+    // Check for token in local storage and update state
+    if (typeof window !== "undefined") {
+      const token = localStorage.getItem("yourAuthToken"); // Replace with your storage key
+      setAuthToken(token);
+    }
+  }, []);
   return (
     <div>
       {authToken ? (

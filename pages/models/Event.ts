@@ -1,24 +1,33 @@
-// models/Event.js
+import mongoose, { Schema, Document, Model } from 'mongoose';
 
-import mongoose from "mongoose";
-
-const eventSchema = new mongoose.Schema({
-  eventName: String,
-  date: Date,
-  picture: String,
-  timing: String,
-  prize: String,
-  entryFee: Number,
-  isActive: Boolean,
-  description: String,
-});
-
-let Event;
-
-try {
-  Event = mongoose.model("Event");
-} catch {
-  Event = mongoose.model("Event", eventSchema);
+interface IEvent extends Document {
+  eventName: string;
+  date: Date;
+  picture: string;
+  timing: string;
+  prize: string;
+  entryFee: number;
+  isActive: boolean;
+  description: string;
 }
 
-export default Event;
+const eventSchema: Schema = new Schema({
+  eventName: { type: String, required: true },
+  date: { type: Date, required: true },
+  picture: { type: String, required: true },
+  timing: { type: String, required: false },
+  prize: { type: String, required: false },
+  entryFee: { type: Number, required: false },
+  isActive: { type: Boolean, default: true },
+  description: { type: String, required: false },
+});
+
+let EventModel: Model<IEvent>;
+
+try {
+  EventModel = mongoose.model('Event');
+} catch (error) {
+  EventModel = mongoose.model('Event', eventSchema);
+}
+
+export default EventModel;

@@ -1,9 +1,19 @@
-import React, { useState } from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [token, setToken] = useState(null);
+
+  useEffect(() => {
+    // Only run this effect after initial render (componentDidMount in class components)
+    if (typeof window !== "undefined" && token) {
+      localStorage.setItem("yourAuthToken", token);
+      window.location.href = "/Dashboard"; // Redirect to your protected page
+    }
+  }, [token]); // This effect depends on the 'token' state
 
   const handleLogin = async () => {
     try {
@@ -13,13 +23,10 @@ function Login() {
       });
 
       // Assuming the API returns a token in the response
-      const token = response.data.token;
+      const receivedToken = response.data.token;
 
-      // Store the token in localStorage
-      localStorage.setItem("yourAuthToken", token); // Replace with your storage key
-
-      // Redirect the user to a protected page
-      window.location.href = "/Dashboard"; // Redirect to your protected page
+      // Update the token state
+      setToken(receivedToken);
     } catch (error) {
       console.error(error);
       // Handle login error
