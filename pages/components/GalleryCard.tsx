@@ -16,7 +16,7 @@ const GalleryCard = ({ name, year, image, link }: Profile) => {
   };
 
   return (
-    <div className="profile-card-container">
+    <div className="profile-card-container pb-8">
       <div
         className="profile-card relative"
         onMouseEnter={handleHover}

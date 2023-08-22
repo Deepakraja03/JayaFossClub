@@ -66,7 +66,7 @@ function Gallery() {
             <p className="lg:text-6xl text-4xl text-gray-200 text-center pb-10  font-bold ">
               Gallery
             </p>
-            <div className="md:flex pb-10  md:flex-row  gap-5">
+            <div className="md:flex pb-10   md:flex-row  gap-5">
               {/* <Slider {...settings}> */}
               {profiles.map((profile, index) => (
                 <GalleryCard key={index} {...profile} />
