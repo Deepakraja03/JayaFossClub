@@ -1,24 +1,29 @@
-import { useState } from "react";
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon } from "@heroicons/react/24/outline";
-import { Fragment } from "react";
+import { useState, Fragment } from "react";
+import { Disclosure, Transition, Menu, Dialog } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon, BellIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import jeclogo from "../../Assets/image 6.png";
 import fosslogo from "../../Assets/image 5.png";
 import Link from "next/link";
-const navigation = [
+
+interface NavigationItem {
+  name: string;
+  href: string;
+  current?: boolean; // Assuming this is a boolean, change if necessary
+}
+
+const navigation: NavigationItem[] = [
   { name: "Home", href: "/" },
   { name: "Gallery", href: "/Gallery" },
   { name: "Activities", href: "#" },
   { name: "Contact Us", href: "#" },
 ];
 
-function classNames(...classes) {
+function classNames(...classes: (string | undefined)[]) {
   return classes.filter(Boolean).join(" ");
 }
-function Header() {
+
+const Header: React.FC = () => {
   return (
     <Disclosure as="nav" className="bg-[#2a2b6b]">
       {({ open }) => (
@@ -103,6 +108,6 @@ function Header() {
       )}
     </Disclosure>
   );
-}
+};
 
 export default Header;

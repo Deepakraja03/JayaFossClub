@@ -1,8 +1,17 @@
-// components/EventForm.js
-import React, { useState } from "react";
+import React, { useState, ChangeEvent, FormEvent } from "react";
 
-const Dashboard = () => {
-  const [formData, setFormData] = useState({
+interface FormData {
+  eventName: string;
+  date: string;
+  picture: string;
+  timing: string;
+  prize: string;
+  entryFee: string;
+  description: string;
+}
+
+const Dashboard: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
     eventName: "",
     date: "",
     picture: "",
@@ -12,7 +21,7 @@ const Dashboard = () => {
     description: "",
   });
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
       const response = await fetch("/api/events", {
@@ -34,7 +43,9 @@ const Dashboard = () => {
     }
   };
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
@@ -117,7 +128,6 @@ const Dashboard = () => {
         </>
       ) : (
         <div>
-          {" "}
           <p>You need to be logged in to create an event.</p>
         </div>
       )}
@@ -125,5 +135,4 @@ const Dashboard = () => {
   );
 };
 
-// Wrap the EventForm component with the withAuth higher-order component
 export default Dashboard;
