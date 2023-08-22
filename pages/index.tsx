@@ -137,17 +137,17 @@ export default function Home() {
                 <thead>
                   <tr>
                     <th className="border-b lg:px-5 lg:py-5">Event</th>
-                    <th className="border-b lg:px-5 lg:py-5">Timing</th>
+                    <th className="border-b px-1 lg:px-5 lg:py-5">Timing</th>
                     <th className="border-b lg:px-5 lg:py-5">Venue</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td className="border-b lg:px-5 lg:py-5">Inaugration</td>
-                    <td className="border-b lg:px-5 lg:py-5">
+                    <td className="border-b  lg:px-5 lg:py-5">
                       5:00 PM - 8:00 PM
                     </td>
-                    <td className="border-b lg:px-5 lg:py-5">Grand Hall</td>
+                    <td className="border-b lg:px-5 lg:py-5">Seminar Hall</td>
                   </tr>
                   <tr>
                     <td className="border-b lg:px-5 lg:py-5">
@@ -163,21 +163,21 @@ export default function Home() {
                     <td className="border-b lg:px-5 lg:py-2">
                       1:00 PM - 3:00 PM
                     </td>
-                    <td className="border-b lg:px-5 lg:py-2">Beachside</td>
+                    <td className="border-b lg:px-5 lg:py-2">2nd floor</td>
                   </tr>
                   <tr>
                     <td className="border-b lg:px-5 lg:py-5">Quiz</td>
                     <td className="border-b lg:px-5 lg:py-2">
                       1:00 PM - 3:00 PM
                     </td>
-                    <td className="border-b lg:px-5 lg:py-2">Beachside</td>
+                    <td className="border-b lg:px-5 lg:py-2">2nd floor</td>
                   </tr>
                   <tr>
                     <td className="border-b lg:px-5 lg:py-5">Short Film</td>
                     <td className="border-b lg:px-5 lg:py-2">
                       1:00 PM - 3:00 PM
                     </td>
-                    <td className="border-b lg:px-5 lg:py-2">Beachside</td>
+                    <td className="border-b lg:px-5 lg:py-2">2nd floor</td>
                   </tr>
                   <tr>
                     <td className="border-b lg:px-5 lg:py-2">
@@ -186,12 +186,12 @@ export default function Home() {
                     <td className="border-b lg:px-5 lg:py-2">
                       1:00 PM - 3:00 PM
                     </td>
-                    <td className="border-b lg:px-5 lg:py-2">Beachside</td>
+                    <td className="border-b lg:px-5 lg:py-2">2nd floor</td>
                   </tr>
                   <tr>
                     <td>Debate</td>
                     <td>6:00 PM - 9:00 PM</td>
-                    <td>Rooftop Lounge</td>
+                    <td>2nd floor</td>
                   </tr>
                 </tbody>
               </table>

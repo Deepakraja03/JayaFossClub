@@ -7,9 +7,10 @@ import { Fragment } from "react";
 import Image from "next/image";
 import jeclogo from "../../Assets/image 6.png";
 import fosslogo from "../../Assets/image 5.png";
+import Link from "next/link";
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "Gallery", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "Gallery", href: "/Gallery" },
   { name: "Activities", href: "#" },
   { name: "Contact Us", href: "#" },
 ];
@@ -19,7 +20,7 @@ function classNames(...classes) {
 }
 function Header() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-[#2a2b6b]">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-8xl p-2 lg:px-20">
@@ -36,7 +37,7 @@ function Header() {
                     src={fosslogo}
                     alt="Your Company"
                   />
-                  <p className="text-gray-200 lg:text-3xl text-xl font-semibold font-serif">
+                  <p className="text-white lg:text-3xl text-xl font-semibold font-serif">
                     Jaya Foss Club
                   </p>
                 </div>
@@ -44,19 +45,19 @@ function Header() {
               <div className="hidden lg:flex space-x-8 sm:ml-6 sm:block">
                 <div className="flex space-x-8">
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
                       href={item.href}
                       className={classNames(
                         item.current
                           ? "bg-gray-900 text-white"
-                          : "text-gray-200 hover:bg-gray-700 hover:text-white",
+                          : "text-white hover:bg-gray-700 hover:text-white",
                         "rounded-md px-3 py-2 text-lg font-medium"
                       )}
                       aria-current={item.current ? "page" : undefined}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
                 <button className="text-lg  leading-6 text-[#0B081C] px-8 py-2 rounded-3xl bg-[#ECECEC]">
