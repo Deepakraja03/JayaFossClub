@@ -16,7 +16,7 @@ const navigation: NavigationItem[] = [
   { name: "Home", href: "/" },
   { name: "Gallery", href: "/Gallery" },
   { name: "Activities", href: "#" },
-  { name: "Contact Us", href: "#" },
+  { name: "Contact Us", href: "/Contact" },
 ];
 
 function classNames(...classes: (string | undefined)[]) {
