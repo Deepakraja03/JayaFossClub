@@ -145,7 +145,8 @@ function Activities() {
                     <div className="text-gray-600 dark:text-gray-400">
                       <div className="text-base font-normal flex flex-col space-y-2">
                         <span className="font-medium text-gray-900 dark:text-white">
-                          College WEBTOPS'12 - National Conference, Mar 30, 2012
+                          College WEBTOPS&apos;12 - National Conference, Mar 30,
+                          2012
                         </span>
                       </div>
 
@@ -233,10 +234,10 @@ function Activities() {
                 Scientific Python, Dec 4-7,2011 @ IITB, Mumbai OSI Days 2011 -
                 Open Source India Conference, Nov 20-22, 2011 @ Bangalore PyCon
                 India 2011, International Conference on Python, Sep 16-18, 2011
-                @ Pune Software Freedom Day'11 on 17th Sep 2011 @ Jaya Engg.
-                College Report on Past and Proposed activities of Jaya FOSS
-                Club, 2011 OSMEET '11, Conference on Open Source, Feb 4, 2011,
-                Madurai
+                @ Pune Software Freedom Day&apos;11 on 17th Sep 2011 @ Jaya
+                Engg. College Report on Past and Proposed activities of Jaya
+                FOSS Club, 2011 OSMEET &apos;11, Conference on Open Source, Feb
+                4, 2011, Madurai
               </ol>
             </div>
 
@@ -247,20 +248,20 @@ function Activities() {
               <ol className="mt-3 divide-y divider-gray-200 dark:divide-gray-700">
                 National Conference On Free Software, Bangalore - March 20-21,
                 2010 Congratulations to M.B. Aishwarya, IV B.E(CSE) for getting
-                through Google Summer of Code 2010(GSoC '10) National Convention
-                for Academics and Research, Dec 16-18, 2010,Hyderabad SciPy.in
-                2010, International Conference on Scientific Python Dec
+                through Google Summer of Code 2010(GSoC &apos;10) National
+                Convention for Academics and Research, Dec 16-18, 2010,Hyderabad
+                SciPy.in 2010, International Conference on Scientific Python Dec
                 13-18,Hyderabad FOSS.IN, Dec 15-17, 2010, Bangalore Python
                 Conference - PyCon India 2010, 25-26 Sep 2010, Bangalore Open
                 Source India - Conference (OSI Days 2010), 19-21 Sep, 2010,
-                Chennai Software Freedom Day '10, 18th Sep 2010, Jaya Engg.
+                Chennai Software Freedom Day &apos;10, 18th Sep 2010, Jaya Engg.
                 College, Chennai Report on Past and Proposed Activities of Jaya
                 FOSS Club, 2010 ILUGC Summer Workshops Tamil Internet
-                Conference, June 23-27, 2010. WEBTOPS '10- National Conference
-                on Webtechnology and Open Source, 27th Mar, 2010 Seminar on
-                “Intellectual Property Rights & Open Source Software - Issues &
-                Challenges”, NRCFOSS-AU, 3rd March, 2010 CARTE BLANCHE'10 - an
-                Open Source Symposium, MIT, 27-28 Feb, 2010
+                Conference, June 23-27, 2010. WEBTOPS &apos;10- National
+                Conference on Webtechnology and Open Source, 27th Mar, 2010
+                Seminar on “Intellectual Property Rights & Open Source Software
+                - Issues & Challenges”, NRCFOSS-AU, 3rd March, 2010 CARTE
+                BLANCHE&apos;10 - an Open Source Symposium, MIT, 27-28 Feb, 2010
               </ol>
             </div>
 
@@ -272,34 +273,34 @@ function Activities() {
                 SciPy.in, Scientific Python Conference, 12-17 Dec 2009,
                 Trivandrum FOSS.in, the Indian FOSS Event, 1-5 Dec 2009,
                 Bangalore FDP on Free and Open Source Software(FOSS), 23-27 Nov
-                2009 Software Freedom Day '09 on 19.09.2009 Two Basic Courses
-                Launched on 01.09.2009 Ubuntu Developers Week - Aug 31st 2009 to
-                Sep 4th 2009 Report on Past and Present activities of Jaya FOSS
-                Club - (2009) Inauguration of Jaya FOSS Club activities for the
-                Academic Year 2009-10 by Shri. Asokan Pichai on 12th Aug, 2009
-                Seminar on “Open Source - a Way to info”, 24th July 2009, JEC
-                Campus Seminar on “Web 2.0″, 17th July 2009, Jaya Engg. College
-                Campus Workshop on “Open Source Projects and Contribution
-                towards Community Projects”,15th July 2009, Jaya Engg. College.
-                Workshop on “Green ICT - making it FOSSible”, 11th July 2009, IC
-                & SR Auditorium, IIT Madras Workshop on “CASE TOOLs LAB” using
-                Open Source Tools, 9th July 2009 for IV year B.E(CSE) & III Year
-                B.Tech (IT) Congratulations to J.G. Sivaji, IV B.E(CSE) for
-                getting through Google Summer of Code 2009(GSoC '09) Online Quiz
-                (on Open Source). Open from 18.04.2009 to 26.04.2009 Seminar on
-                “Economic Recession and Employment Opportunity - The Power of
-                Open Source” on 02.04.2009 @Jaya Engineering College by
-                Shri.Umashankar IAS Workshop on LAMP on 19.03.2009 for Beginers
-                National Conference on Webtechnology & Open Source (Webtops'09)
-                on 2nd April,2009 @ Jaya Engg. College FOSSConf '09, 27th Feb -
-                1st Mar, (location not provided in the data) Seminar on
-                “Embedded Systems using Open Source Tools”, 24th Feb 2009, Jaya
-                Engg. College. Workshop on “System Administration using Linux”,
-                19th Feb 2009, Jaya Engg. College. Seminar on “Open Source
-                Operating Systems”, 10th Feb 2009, Jaya Engg. College. Workshop
-                on “Open Source Tools for Web Development”, 5th Feb 2009, Jaya
-                Engg. College. Seminar on “Open Source in Bioinformatics”, 28th
-                Jan 2009, Jaya Engg. College.
+                2009 Software Freedom Day &apos;09 on 19.09.2009 Two Basic
+                Courses Launched on 01.09.2009 Ubuntu Developers Week - Aug 31st
+                2009 to Sep 4th 2009 Report on Past and Present activities of
+                Jaya FOSS Club - (2009) Inauguration of Jaya FOSS Club
+                activities for the Academic Year 2009-10 by Shri. Asokan Pichai
+                on 12th Aug, 2009 Seminar on “Open Source - a Way to info”, 24th
+                July 2009, JEC Campus Seminar on “Web 2.0″, 17th July 2009, Jaya
+                Engg. College Campus Workshop on “Open Source Projects and
+                Contribution towards Community Projects”,15th July 2009, Jaya
+                Engg. College. Workshop on “Green ICT - making it FOSSible”,
+                11th July 2009, IC & SR Auditorium, IIT Madras Workshop on “CASE
+                TOOLs LAB” using Open Source Tools, 9th July 2009 for IV year
+                B.E(CSE) & III Year B.Tech (IT) Congratulations to J.G. Sivaji,
+                IV B.E(CSE) for getting through Google Summer of Code 2009(GSoC
+                &apos;09) Online Quiz (on Open Source). Open from 18.04.2009 to
+                26.04.2009 Seminar on “Economic Recession and Employment
+                Opportunity - The Power of Open Source” on 02.04.2009 @Jaya
+                Engineering College by Shri.Umashankar IAS Workshop on LAMP on
+                19.03.2009 for Beginers National Conference on Webtechnology &
+                Open Source (Webtops&apos;09) on 2nd April,2009 @ Jaya Engg.
+                College FOSSConf &apos;09, 27th Feb - 1st Mar, (location not
+                provided in the data) Seminar on “Embedded Systems using Open
+                Source Tools”, 24th Feb 2009, Jaya Engg. College. Workshop on
+                “System Administration using Linux”, 19th Feb 2009, Jaya Engg.
+                College. Seminar on “Open Source Operating Systems”, 10th Feb
+                2009, Jaya Engg. College. Workshop on “Open Source Tools for Web
+                Development”, 5th Feb 2009, Jaya Engg. College. Seminar on “Open
+                Source in Bioinformatics”, 28th Jan 2009, Jaya Engg. College.
               </ol>
             </div>
           </div>
