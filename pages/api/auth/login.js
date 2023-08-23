@@ -1,7 +1,7 @@
 import bcrypt from "bcrypt";
 import User from "../../models/User"; // Adjust the path to your User model
 import jwt from "jsonwebtoken";
-import connectDB from "../utils/dbConnect";
+import connectDB from "../../../utils/dbConnect";
 
 connectDB();
 
