@@ -3,7 +3,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import Event from "../models/Event";
 import jwt from "jsonwebtoken";
-import connectDB from "../utils/dbConnect";
+import connectDB from "./utils/dbConnect";
 
 connectDB();
 

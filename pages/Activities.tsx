@@ -5,41 +5,25 @@ function Activities() {
   return (
     <div>
       <Header />
-      <div className="py-24 px-32">
+      <div className="lg:py-24 py-5 px-4 lg:px-32">
         <p className="text-3xl font-bold py-3">Our Activities</p>
         <div className="p-5 mb-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
           <time className="text-lg font-semibold text-gray-900 dark:text-white">
-            January 13th, 2022
+            2022
           </time>
           <ol className="mt-3 divide-y divider-gray-200 dark:divide-gray-700">
             <li>
               <a
                 href="#"
-                className="items-center block p-3 sm:flex hover:bg-gray-100 dark:hover:bg-gray-700"
+                className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                <img
-                  className="w-12 h-12 mb-3 mr-3 rounded-full sm:mb-0"
-                  src="/docs/images/people/profile-picture-1.jpg"
-                  alt="Jese Leos image"
-                />
                 <div className="text-gray-600 dark:text-gray-400">
                   <div className="text-base font-normal">
                     <span className="font-medium text-gray-900 dark:text-white">
-                      Jese Leos
-                    </span>{" "}
-                    likes{" "}
-                    <span className="font-medium text-gray-900 dark:text-white">
-                      Bonnie Greens
-                    </span>{" "}
-                    post in{" "}
-                    <span className="font-medium text-gray-900 dark:text-white">
-                      {" "}
-                      How to start with Flowbite library
+                      Software Freedom Day 2022
                     </span>
                   </div>
-                  <div className="text-sm font-normal">
-                    I wanted to share a webinar zeroheight.
-                  </div>
+
                   <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
                     <svg
                       className="w-2.5 h-2.5 mr-1"
@@ -51,121 +35,29 @@ function Activities() {
                       <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
                     </svg>
                     Public
-                  </span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="items-center block p-3 sm:flex hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <img
-                  className="w-12 h-12 mb-3 mr-3 rounded-full sm:mb-0"
-                  src="/docs/images/people/profile-picture-3.jpg"
-                  alt="Bonnie Green image"
-                />
-                <div>
-                  <div className="text-base font-normal text-gray-600 dark:text-gray-400">
-                    <span className="font-medium text-gray-900 dark:text-white">
-                      Bonnie Green
-                    </span>{" "}
-                    react to{" "}
-                    <span className="font-medium text-gray-900 dark:text-white">
-                      Thomas Leans
-                    </span>{" "}
-                    comment
-                  </div>
-                  <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
-                    <svg
-                      className="w-2.5 h-2.5 mr-1"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="m2 13.587 3.055-3.055A4.913 4.913 0 0 1 5 10a5.006 5.006 0 0 1 5-5c.178.008.356.026.532.054l1.744-1.744A8.973 8.973 0 0 0 10 3C4.612 3 0 8.336 0 10a6.49 6.49 0 0 0 2 3.587Z" />
-                      <path d="m12.7 8.714 6.007-6.007a1 1 0 1 0-1.414-1.414L11.286 7.3a2.98 2.98 0 0 0-.588-.21l-.035-.01a2.981 2.981 0 0 0-3.584 3.583c0 .012.008.022.01.033.05.204.12.401.211.59l-6.007 6.007a1 1 0 1 0 1.414 1.414L8.714 12.7c.189.091.386.162.59.211.011 0 .021.007.033.01a2.981 2.981 0 0 0 3.584-3.584c0-.012-.008-.023-.011-.035a3.05 3.05 0 0 0-.21-.588Z" />
-                      <path d="M17.821 6.593 14.964 9.45a4.952 4.952 0 0 1-5.514 5.514L7.665 16.75c.767.165 1.55.25 2.335.251 6.453 0 10-5.258 10-7 0-1.166-1.637-2.874-2.179-3.407Z" />
-                    </svg>
-                    Private
                   </span>
                 </div>
               </a>
             </li>
           </ol>
         </div>
-        <div className="p-5 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+        <div className="p-5 mb-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
           <time className="text-lg font-semibold text-gray-900 dark:text-white">
-            January 12th, 2022
+            2014
           </time>
           <ol className="mt-3 divide-y divider-gray-200 dark:divide-gray-700">
             <li>
               <a
                 href="#"
-                className="items-center block p-3 sm:flex hover:bg-gray-100 dark:hover:bg-gray-700"
+                className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                <img
-                  className="w-12 h-12 mb-3 mr-3 rounded-full sm:mb-0"
-                  src="/docs/images/people/profile-picture-4.jpg"
-                  alt="Laura Romeros image"
-                />
                 <div className="text-gray-600 dark:text-gray-400">
                   <div className="text-base font-normal">
                     <span className="font-medium text-gray-900 dark:text-white">
-                      Laura Romeros
-                    </span>{" "}
-                    likes{" "}
-                    <span className="font-medium text-gray-900 dark:text-white">
-                      Bonnie Greens
-                    </span>{" "}
-                    post in{" "}
-                    <span className="font-medium text-gray-900 dark:text-white">
-                      {" "}
-                      How to start with Flowbite library
+                      Software Freedom Day 2014
                     </span>
                   </div>
-                  <div className="text-sm font-normal">
-                    I wanted to share a webinar zeroheight.
-                  </div>
-                  <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
-                    <svg
-                      className="w-2.5 h-2.5 mr-1"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="m2 13.587 3.055-3.055A4.913 4.913 0 0 1 5 10a5.006 5.006 0 0 1 5-5c.178.008.356.026.532.054l1.744-1.744A8.973 8.973 0 0 0 10 3C4.612 3 0 8.336 0 10a6.49 6.49 0 0 0 2 3.587Z" />
-                      <path d="m12.7 8.714 6.007-6.007a1 1 0 1 0-1.414-1.414L11.286 7.3a2.98 2.98 0 0 0-.588-.21l-.035-.01a2.981 2.981 0 0 0-3.584 3.583c0 .012.008.022.01.033.05.204.12.401.211.59l-6.007 6.007a1 1 0 1 0 1.414 1.414L8.714 12.7c.189.091.386.162.59.211.011 0 .021.007.033.01a2.981 2.981 0 0 0 3.584-3.584c0-.012-.008-.023-.011-.035a3.05 3.05 0 0 0-.21-.588Z" />
-                      <path d="M17.821 6.593 14.964 9.45a4.952 4.952 0 0 1-5.514 5.514L7.665 16.75c.767.165 1.55.25 2.335.251 6.453 0 10-5.258 10-7 0-1.166-1.637-2.874-2.179-3.407Z" />
-                    </svg>
-                    Private
-                  </span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="items-center block p-3 sm:flex hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <img
-                  className="w-12 h-12 mb-3 mr-3 rounded-full sm:mb-0"
-                  src="/docs/images/people/profile-picture-2.jpg"
-                  alt="Mike Willi image"
-                />
-                <div>
-                  <div className="text-base font-normal text-gray-600 dark:text-gray-400">
-                    <span className="font-medium text-gray-900 dark:text-white">
-                      Mike Willi
-                    </span>{" "}
-                    react to{" "}
-                    <span className="font-medium text-gray-900 dark:text-white">
-                      Thomas Leans
-                    </span>{" "}
-                    comment
-                  </div>
+
                   <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
                     <svg
                       className="w-2.5 h-2.5 mr-1"
@@ -181,34 +73,126 @@ function Activities() {
                 </div>
               </a>
             </li>
+          </ol>
+        </div>
+        <div className="p-5 mb-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+          <time className="text-lg font-semibold text-gray-900 dark:text-white">
+            2012
+          </time>
+          <ol className="mt-3 divide-y divider-gray-200 dark:divide-gray-700">
             <li>
               <a
                 href="#"
-                className="items-center block p-3 sm:flex hover:bg-gray-100 dark:hover:bg-gray-700"
+                className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                <img
-                  className="w-12 h-12 mb-3 mr-3 rounded-full sm:mb-0"
-                  src="/docs/images/people/profile-picture-5.jpg"
-                  alt="Jese Leos image"
-                />
                 <div className="text-gray-600 dark:text-gray-400">
-                  <div className="text-base font-normal">
+                  <div className="text-base font-normal flex flex-col space-y-2">
                     <span className="font-medium text-gray-900 dark:text-white">
-                      Jese Leos
+                      Richard M Stallman Visit to Chennai on 06.02.2012 spoken
                     </span>{" "}
-                    likes{" "}
+                  </div>
+
+                  <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                    <svg
+                      className="w-2.5 h-2.5 mr-1"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                    </svg>
+                    Public
+                  </span>
+                </div>
+              </a>
+              <a
+                href="#"
+                className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+              >
+                <div className="text-gray-600 dark:text-gray-400">
+                  <div className="text-base font-normal flex flex-col space-y-2">
                     <span className="font-medium text-gray-900 dark:text-white">
-                      Bonnie Greens
-                    </span>{" "}
-                    post in{" "}
-                    <span className="font-medium text-gray-900 dark:text-white">
-                      {" "}
-                      How to start with Flowbite library
+                      Tutorial Workshop on Linux, Nov 23-24, 2012 @ Jaya Engg.
                     </span>
                   </div>
-                  <div className="text-sm font-normal">
-                    I wanted to share a webinar zeroheight.
+
+                  <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                    <svg
+                      className="w-2.5 h-2.5 mr-1"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                    </svg>
+                    Public
+                  </span>
+                </div>
+              </a>
+              <a
+                href="#"
+                className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+              >
+                <div className="text-gray-600 dark:text-gray-400">
+                  <div className="text-base font-normal flex flex-col space-y-2">
+                    <span className="font-medium text-gray-900 dark:text-white">
+                      College WEBTOPS'12 - National Conference, Mar 30, 2012
+                    </span>
                   </div>
+
+                  <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                    <svg
+                      className="w-2.5 h-2.5 mr-1"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                    </svg>
+                    Public
+                  </span>
+                </div>
+              </a>
+              <a
+                href="#"
+                className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+              >
+                <div className="text-gray-600 dark:text-gray-400">
+                  <div className="text-base font-normal flex flex-col space-y-2">
+                    <span className="font-medium text-gray-900 dark:text-white">
+                      Workshop on “Contributing to Tamil Wikipedia”, Feb 4,2012
+                    </span>
+                  </div>
+
+                  <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                    <svg
+                      className="w-2.5 h-2.5 mr-1"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                    </svg>
+                    Public
+                  </span>
+                </div>
+              </a>
+              <a
+                href="#"
+                className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+              >
+                <div className="text-gray-600 dark:text-gray-400">
+                  <div className="text-base font-normal flex flex-col space-y-2">
+                    <span className="font-medium text-gray-900 dark:text-white">
+                      @ FOSS Centre Workshop on NS2, March 22, 2012 @ FOSS
+                      Centre
+                    </span>
+                  </div>
+
                   <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
                     <svg
                       className="w-2.5 h-2.5 mr-1"
@@ -224,51 +208,86 @@ function Activities() {
                 </div>
               </a>
             </li>
-            <li>
-              <a
-                href="#"
-                className="items-center block p-3 sm:flex hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <img
-                  className="w-12 h-12 mb-3 mr-3 rounded-full sm:mb-0"
-                  src="/docs/images/people/profile-picture-3.jpg"
-                  alt="Bonnie Green image"
-                />
-                <div className="text-gray-600 dark:text-gray-400">
-                  <div className="text-base font-normal">
-                    <span className="font-medium text-gray-900 dark:text-white">
-                      Bonnie Green
-                    </span>{" "}
-                    likes{" "}
-                    <span className="font-medium text-gray-900 dark:text-white">
-                      Bonnie Greens
-                    </span>{" "}
-                    post in{" "}
-                    <span className="font-medium text-gray-900 dark:text-white">
-                      {" "}
-                      Top figma designs
-                    </span>
-                  </div>
-                  <div className="text-sm font-normal">
-                    I wanted to share a webinar zeroheight.
-                  </div>
-                  <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
-                    <svg
-                      className="w-2.5 h-2.5 mr-1"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="m2 13.587 3.055-3.055A4.913 4.913 0 0 1 5 10a5.006 5.006 0 0 1 5-5c.178.008.356.026.532.054l1.744-1.744A8.973 8.973 0 0 0 10 3C4.612 3 0 8.336 0 10a6.49 6.49 0 0 0 2 3.587Z" />
-                      <path d="m12.7 8.714 6.007-6.007a1 1 0 1 0-1.414-1.414L11.286 7.3a2.98 2.98 0 0 0-.588-.21l-.035-.01a2.981 2.981 0 0 0-3.584 3.583c0 .012.008.022.01.033.05.204.12.401.211.59l-6.007 6.007a1 1 0 1 0 1.414 1.414L8.714 12.7c.189.091.386.162.59.211.011 0 .021.007.033.01a2.981 2.981 0 0 0 3.584-3.584c0-.012-.008-.023-.011-.035a3.05 3.05 0 0 0-.21-.588Z" />
-                      <path d="M17.821 6.593 14.964 9.45a4.952 4.952 0 0 1-5.514 5.514L7.665 16.75c.767.165 1.55.25 2.335.251 6.453 0 10-5.258 10-7 0-1.166-1.637-2.874-2.179-3.407Z" />
-                    </svg>
-                    Private
-                  </span>
-                </div>
-              </a>
-            </li>
+          </ol>
+        </div>
+        <div className="p-5 mb-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+          <time className="text-lg font-semibold text-gray-900 dark:text-white">
+            2011
+          </time>
+          <ol className="mt-3 divide-y divider-gray-200 dark:divide-gray-700">
+            Spoken Tutorial Workshop on LATEX, Dec 23, 2011 @ FOSS Centre, JEC
+            Google Code-in 2010-11 (Open Source Project Contest) Announced
+            Workshop on Drupal, Dec 3, 2011 @ FOSS Centre, Jaya Engg. College
+            Spoken Tutorial Workshop on Python, Dec 21-22, 2011 @ FOSS Centre,
+            JEC Wikipedia Workshop, Dec 10, 2011 @ FOSS Centre, Jaya Engg.
+            College Prof. Kannan Moudgalya, IIT-B - Visit to Jaya Engg. College
+            on 02.12.2011 Scipy.in 2011- Conference on Scientific Python, Dec
+            4-7,2011 @ IITB, Mumbai OSI Days 2011 - Open Source India
+            Conference, Nov 20-22, 2011 @ Bangalore PyCon India 2011,
+            International Conference on Python, Sep 16-18, 2011 @ Pune Software
+            Freedom Day'11 on 17th Sep 2011 @ Jaya Engg. College Report on Past
+            and Proposed activities of Jaya FOSS Club, 2011 OSMEET '11,
+            Conference on Open Source, Feb 4, 2011, Madurai
+          </ol>
+        </div>
+
+        <div className="p-5 mb-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+          <time className="text-lg font-semibold text-gray-900 dark:text-white">
+            2010
+          </time>
+          <ol className="mt-3 divide-y divider-gray-200 dark:divide-gray-700">
+            National Conference On Free Software, Bangalore - March 20-21, 2010
+            Congratulations to M.B. Aishwarya, IV B.E(CSE) for getting through
+            Google Summer of Code 2010(GSoC '10) National Convention for
+            Academics and Research, Dec 16-18, 2010,Hyderabad SciPy.in 2010,
+            International Conference on Scientific Python Dec 13-18,Hyderabad
+            FOSS.IN, Dec 15-17, 2010, Bangalore Python Conference - PyCon India
+            2010, 25-26 Sep 2010, Bangalore Open Source India - Conference (OSI
+            Days 2010), 19-21 Sep, 2010, Chennai Software Freedom Day '10, 18th
+            Sep 2010, Jaya Engg. College, Chennai Report on Past and Proposed
+            Activities of Jaya FOSS Club, 2010 ILUGC Summer Workshops Tamil
+            Internet Conference, June 23-27, 2010. WEBTOPS '10- National
+            Conference on Webtechnology and Open Source, 27th Mar, 2010 Seminar
+            on “Intellectual Property Rights & Open Source Software - Issues &
+            Challenges”, NRCFOSS-AU, 3rd March, 2010 CARTE BLANCHE'10 - an Open
+            Source Symposium, MIT, 27-28 Feb, 2010
+          </ol>
+        </div>
+
+        <div className="p-5 mb-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+          <time className="text-lg font-semibold text-gray-900 dark:text-white">
+            2009
+          </time>
+          <ol className="mt-3 divide-y divider-gray-200 dark:divide-gray-700">
+            SciPy.in, Scientific Python Conference, 12-17 Dec 2009, Trivandrum
+            FOSS.in, the Indian FOSS Event, 1-5 Dec 2009, Bangalore FDP on Free
+            and Open Source Software(FOSS), 23-27 Nov 2009 Software Freedom Day
+            '09 on 19.09.2009 Two Basic Courses Launched on 01.09.2009 Ubuntu
+            Developers Week - Aug 31st 2009 to Sep 4th 2009 Report on Past and
+            Present activities of Jaya FOSS Club - (2009) Inauguration of Jaya
+            FOSS Club activities for the Academic Year 2009-10 by Shri. Asokan
+            Pichai on 12th Aug, 2009 Seminar on “Open Source - a Way to info”,
+            24th July 2009, JEC Campus Seminar on “Web 2.0″, 17th July 2009,
+            Jaya Engg. College Campus Workshop on “Open Source Projects and
+            Contribution towards Community Projects”,15th July 2009, Jaya Engg.
+            College. Workshop on “Green ICT - making it FOSSible”, 11th July
+            2009, IC & SR Auditorium, IIT Madras Workshop on “CASE TOOLs LAB”
+            using Open Source Tools, 9th July 2009 for IV year B.E(CSE) & III
+            Year B.Tech (IT) Congratulations to J.G. Sivaji, IV B.E(CSE) for
+            getting through Google Summer of Code 2009(GSoC '09) Online Quiz (on
+            Open Source). Open from 18.04.2009 to 26.04.2009 Seminar on
+            “Economic Recession and Employment Opportunity - The Power of Open
+            Source” on 02.04.2009 @Jaya Engineering College by Shri.Umashankar
+            IAS Workshop on LAMP on 19.03.2009 for Beginers National Conference
+            on Webtechnology & Open Source (Webtops'09) on 2nd April,2009 @ Jaya
+            Engg. College FOSSConf '09, 27th Feb - 1st Mar, (location not
+            provided in the data) Seminar on “Embedded Systems using Open Source
+            Tools”, 24th Feb 2009, Jaya Engg. College. Workshop on “System
+            Administration using Linux”, 19th Feb 2009, Jaya Engg. College.
+            Seminar on “Open Source Operating Systems”, 10th Feb 2009, Jaya
+            Engg. College. Workshop on “Open Source Tools for Web Development”,
+            5th Feb 2009, Jaya Engg. College. Seminar on “Open Source in
+            Bioinformatics”, 28th Jan 2009, Jaya Engg. College.
           </ol>
         </div>
       </div>

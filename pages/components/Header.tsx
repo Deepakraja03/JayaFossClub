@@ -65,9 +65,11 @@ const Header: React.FC = () => {
                     </Link>
                   ))}
                 </div>
-                <button className="text-lg  leading-6 text-[#0B081C] px-8 py-2 rounded-3xl bg-[#ECECEC]">
-                  Login
-                </button>
+                <Link href="/Login">
+                  <button className="text-lg  leading-6 text-[#0B081C] px-8 py-2 rounded-3xl bg-[#ECECEC]">
+                    Login
+                  </button>
+                </Link>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
