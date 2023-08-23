@@ -12,7 +12,7 @@ function Login() {
 
   useEffect(() => {
     // Only run this effect after initial render (componentDidMount in class components)
-    if (typeof window !== "undefined" && token) {
+    if (token) {
       localStorage.setItem("yourAuthToken", token);
       window.location.href = "/Dashboard"; // Redirect to your protected page
     }

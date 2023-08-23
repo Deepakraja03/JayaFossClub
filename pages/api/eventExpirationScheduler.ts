@@ -1,11 +1,8 @@
-import Event from "../models/Event";
+import Event from "../../models/Event";
 import mongoose from "mongoose";
 import cron from "node-cron";
 
-mongoose.connect(process.env.MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(process.env.MONGODB_URI!);
 
 const updateExpiredEvents = async () => {
   try {

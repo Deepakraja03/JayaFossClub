@@ -42,11 +42,11 @@ function Contact() {
     <div className="bg-[url(../Assets/BG.png)]  bg-no-repeat bg-center bg-cover">
       <Header />
       <div className="relative isolate px-6 pb-20 bg-[url(../Assets/BG.png)] lg:px-8">
-        <div className="lg:px-24 pt-10 pb-9">
-          <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
+        <div className="lg:px-24  pb-9">
+          <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-20">
             <div className="space-y-12">
               <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
-                <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                <h2 className="text-3xl font-bold text-gray-200 tracking-tight sm:text-4xl">
                   Meet our team
                 </h2>
                 <p className="text-xl text-gray-500">

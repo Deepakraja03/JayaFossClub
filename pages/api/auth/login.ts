@@ -1,16 +1,25 @@
 import bcrypt from "bcrypt";
-import User from "../../models/User"; // Adjust the path to your User model
+import User from "../../../models/User"; // Adjust the path to your User model
 import jwt from "jsonwebtoken";
-import connectDB from "../../../utils/dbConnect";
+import mongoose from "mongoose";
+
+const connectDB = async (): Promise<void> => {
+  try {
+    await mongoose.connect(process.env.MONGODB_URI!);
+    console.log("Connected to MongoDB");
+  } catch (error) {
+    console.error("MongoDB connection error:", error);
+  }
+};
 
 connectDB();
 
-export default async function handler(req, res) {
+export default async function handler(req: any, res: any): Promise<void> {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const { username, password } = req.body;
+  const { username, password }: { username: string, password: string } = req.body;
 
   try {
     const user = await User.findOne({ username });
@@ -25,7 +34,7 @@ export default async function handler(req, res) {
       return res.status(401).json({ error: "Invalid credentials" });
     }
 
-    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET!);
 
     res.status(200).json({ token });
   } catch (error) {
