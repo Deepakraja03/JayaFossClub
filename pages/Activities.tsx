@@ -848,8 +848,628 @@ function Activities() {
                   <div className="text-gray-600 dark:text-gray-400">
                     <div className="text-base font-normal flex flex-col space-y-2">
                       <span className="font-medium text-gray-900 dark:text-white">
-                        WEBTOPS &apos;10- National Conference on Webtechnology
-                        and Open Source, 27th Mar, 2010
+                        SciPy.in, Scientific Python Conference, 12-17 Dec 2009
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Trivandrum FOSS.in, the Indian FOSS Event, 1-5 Dec 2009
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Bangalore FDP on Free and Open Source Software(FOSS),
+                        23-27 Nov 2009
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Software Freedom Day &apos;09 on 19.09.2009
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Two Basic Courses Launched on 01.09.2009
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Ubuntu Developers Week - Aug 31st 2009 to Sep 4th 2009
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Report on Past and Present activities of Jaya FOSS Club
+                        - (2009)
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Inauguration of Jaya FOSS Club activities for the
+                        Academic Year 2009-10 by Shri. Asokan Pichai on 12th
+                        Aug, 2009
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Seminar on “Open Source - a Way to info”, 24th July 2009
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        JEC Campus Seminar on “Web 2.0″, 17th July 2009
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Jaya Engg. College Campus Workshop on “Open Source
+                        Projects and Contribution towards Community
+                        Projects”,15th July 2009
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Jaya Engg. College. Workshop on “Green ICT - making it
+                        FOSSible”, 11th July 2009
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        IC & SR Auditorium, IIT Madras Workshop on “CASE TOOLs
+                        LAB” using Open Source Tools, 9th July 2009 for IV year
+                        B.E(CSE) & III Year B.Tech (IT)
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Congratulations to J.G. Sivaji, IV B.E(CSE) for getting
+                        through Google Summer of Code 2009(GSoC &apos;09)
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Online Quiz (on Open Source). Open from 18.04.2009 to
+                        26.04.2009
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Seminar on “Economic Recession and Employment
+                        Opportunity - The Power of Open Source” on 02.04.2009
+                        @Jaya Engineering College by Shri.Umashankar
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        IAS Workshop on LAMP on 19.03.2009 for Beginers
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        National Conference on Webtechnology & Open Source
+                        (Webtops&apos;09) on 2nd April,2009 @ Jaya Engg
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        College FOSSConf &apos;09, 27th Feb - 1st Mar, (location
+                        not provided in the data)
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Seminar on “Embedded Systems using Open Source Tools”,
+                        24th Feb 2009, Jaya Engg. College
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Workshop on “System Administration using Linux”, 19th
+                        Feb 2009, Jaya Engg
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        College FOSSConf &apos;09, 27th Feb - 1st Mar, (location
+                        not provided in the data)
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Seminar on “Open Source Operating Systems”, 10th Feb
+                        2009, Jaya Engg. College
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        Workshop on “Open Source Tools for Web Development”, 5th
+                        Feb 2009, Jaya Engg
+                      </span>
+                    </div>
+
+                    <span className="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                      <svg
+                        className="w-2.5 h-2.5 mr-1"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 .5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19ZM8.374 17.4a7.6 7.6 0 0 1-5.9-7.4c0-.83.137-1.655.406-2.441l.239.019a3.887 3.887 0 0 1 2.082 2.5 4.1 4.1 0 0 0 2.441 2.8c1.148.522 1.389 2.007.732 4.522Zm3.6-8.829a.997.997 0 0 0-.027-.225 5.456 5.456 0 0 0-2.811-3.662c-.832-.527-1.347-.854-1.486-1.89a7.584 7.584 0 0 1 8.364 2.47c-1.387.208-2.14 2.237-2.14 3.307a1.187 1.187 0 0 1-1.9 0Zm1.626 8.053-.671-2.013a1.9 1.9 0 0 1 1.771-1.757l2.032.619a7.553 7.553 0 0 1-3.132 3.151Z" />
+                      </svg>
+                      Public
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  className="items-center block p-3 lg:px-10 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-base font-normal flex flex-col space-y-2">
+                      <span className="font-medium text-gray-900 dark:text-white">
+                        College. Seminar on “Open Source in Bioinformatics”,
+                        28th Jan 2009, Jaya Engg. College
                       </span>
                     </div>
 
