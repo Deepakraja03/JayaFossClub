@@ -35,14 +35,14 @@ function Gallery() {
             <div className="grid  grid-cols-2 md:grid-cols-3 gap-4">
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip1}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip2}
                   alt=""
                 />
@@ -50,140 +50,140 @@ function Gallery() {
 
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip3}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip4}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip5}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip6}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip7}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip8}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip9}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip10}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip11}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip12}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip13}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip14}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip15}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip16}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip17}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip18}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip19}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip20}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip21}
                   alt=""
                 />
               </div>
               <div>
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className=" aspect-[4/3] max-w-full rounded-lg"
                   src={Clip22}
                   alt=""
                 />
