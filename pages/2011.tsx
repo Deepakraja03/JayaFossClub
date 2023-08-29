@@ -28,8 +28,8 @@ function Gallery() {
       <Header />
       <div className="relative isolate px-6 bg-[url(../Assets/BG.png)] lg:px-8">
         <div className="lg:px-24 pt-10 pb-10">
-          <div className="px-24  pb-10">
-            <div className="grid  grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="md:px-24  pb-10">
+            <div className="md:grid sm:grid-cols-1 space-y-5 md:space-y-0 md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div>
                 <Image
                   className="h-auto max-w-full rounded-lg"
