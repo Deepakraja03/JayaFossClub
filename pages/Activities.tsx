@@ -3,7 +3,7 @@ import Header from "./components/Header";
 
 function Activities() {
   return (
-    <div className="bg-[url(../Assets/BG.png)]  bg-no-repeat bg-center bg-cover">
+    <div className="bg-[url(../Assets/BG.png)] bg-[#1f2348] bg-no-repeat bg-center bg-cover">
       <Header />
       <div className="relative isolate px-6 pb-20 bg-[url(../Assets/BG.png)] lg:px-8">
         <div className="lg:px-24 pt-10 pb-9">
