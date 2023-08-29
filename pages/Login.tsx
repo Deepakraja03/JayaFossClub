@@ -39,7 +39,7 @@ function Login() {
   return (
     <div className="bg-[url(../Assets/BG.png)]  bg-no-repeat bg-center bg-cover">
       <Header />
-      <div className="relative isolate px-6 pb-20 bg-[url(../Assets/BG.png)] lg:px-8">
+      <div className="relative isolate px-6 pb-36 bg-[url(../Assets/BG.png)] lg:px-8">
         <div className="lg:px-24 pt-10 pb-9">
           <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
             <div className="sm:mx-auto sm:w-full sm:max-w-sm">
@@ -54,7 +54,7 @@ function Login() {
             </div>
 
             <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-sm">
-              <form className="space-y-6" action="#" method="POST">
+              <div className="space-y-2">
                 <div>
                   <label
                     htmlFor="email"
@@ -105,7 +105,7 @@ function Login() {
                     Sign in
                   </button>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
