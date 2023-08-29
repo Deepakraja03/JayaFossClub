@@ -5,6 +5,7 @@ import Image from "next/image";
 import jeclogo from "../../Assets/image 6.png";
 import fosslogo from "../../Assets/image 5.png";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface NavigationItem {
   name: string;
@@ -24,6 +25,14 @@ function classNames(...classes: (string | undefined)[]) {
 }
 
 const DashNav: React.FC = () => {
+  const router = useRouter();
+  const handleLogout = () => {
+    // Remove the token from localStorage
+    localStorage.removeItem("yourAuthToken");
+
+    // Redirect to the home page
+    router.push("/");
+  };
   return (
     <Disclosure as="nav" className="bg-[#2a2b6b]">
       {({ open }) => (
@@ -66,7 +75,10 @@ const DashNav: React.FC = () => {
                   ))}
                 </div>
                 <Link href="/">
-                  <button className="text-lg  leading-6 text-[#0B081C] px-8 py-2 rounded-3xl bg-[#ECECEC]">
+                  <button
+                    onClick={handleLogout}
+                    className="text-lg  leading-6 text-[#0B081C] px-8 py-2 rounded-3xl bg-[#ECECEC]"
+                  >
                     Logout
                   </button>
                 </Link>

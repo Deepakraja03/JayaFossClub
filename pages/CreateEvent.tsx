@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
+import DashNav from "./components/DashNav";
 
 interface FormData {
   eventName: string;
@@ -22,7 +23,7 @@ const CreateEvent: React.FC = () => {
     description: "",
   });
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
       const response = await fetch("/api/events", {
@@ -52,7 +53,7 @@ const CreateEvent: React.FC = () => {
   };
 
   const [authToken, setAuthToken] = useState<string | null>(null);
-
+  console.log(authToken);
   useEffect(() => {
     // Check for token in local storage and update state
     if (typeof window !== "undefined") {
@@ -64,141 +65,170 @@ const CreateEvent: React.FC = () => {
     <div>
       {authToken ? (
         <>
-          <h2>Create Event</h2>
-          <form onSubmit={handleSubmit}>
-            <label>
-              Event Name:
-              <input
-                type="text"
-                name="eventName"
-                value={formData.eventName}
-                onChange={handleChange}
-                required
-              />
-            </label>
-            <label>
-              Date:
-              <input
-                type="date"
-                name="date"
-                value={formData.date}
-                onChange={handleChange}
-                required
-              />
-            </label>
-            <label>
-              Picture URL:
-              <input
-                type="text"
-                name="picture"
-                value={formData.picture}
-                onChange={handleChange}
-                required
-              />
-            </label>
-            <label>
-              Timing:
-              <input
-                type="text"
-                name="timing"
-                value={formData.timing}
-                onChange={handleChange}
-              />
-            </label>
-            <label>
-              Prize:
-              <input
-                type="text"
-                name="prize"
-                value={formData.prize}
-                onChange={handleChange}
-              />
-            </label>
-            <label>
-              Entry Fee:
-              <input
-                type="number"
-                name="entryFee"
-                value={formData.entryFee}
-                onChange={handleChange}
-              />
-            </label>
-            <label>
-              Description:
-              <textarea
-                name="description"
-                value={formData.description}
-                onChange={handleChange}
-              />
-            </label>
-            <button type="submit">Create Event</button>
-          </form>
+          <div className="min-h-full">
+            <DashNav />
+
+            <header className="bg-white shadow">
+              <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+                <h1 className="text-3xl font-bold tracking-tight text-gray-900">
+                  Create Event
+                </h1>
+              </div>
+            </header>
+            <main>
+              <div className="mx-auto max-w-7xl py-6 sm:px-6 rounded-lg bg-gray-300 lg:px-8">
+                <div className="lg:px-24  py-5">
+                  <div className=" sm:mx-auto sm:w-full sm:max-w-sm">
+                    <div className="space-y-6">
+                      <div>
+                        <label
+                          htmlFor="email"
+                          className="block text-sm font-medium leading-6 text-gray-900"
+                        >
+                          Event Name
+                        </label>
+                        <div className="mt-2">
+                          <input
+                            type="text"
+                            name="eventName"
+                            value={formData.eventName}
+                            onChange={handleChange}
+                            required
+                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className="flex items-center justify-between">
+                          <label
+                            htmlFor="password"
+                            className="block text-sm font-medium leading-6 text-gray-900"
+                          >
+                            Date
+                          </label>
+                        </div>
+                        <div className="mt-2">
+                          <input
+                            type="date"
+                            name="date"
+                            value={formData.date}
+                            onChange={handleChange}
+                            required
+                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+
+                      <div>
+                        <label
+                          htmlFor="email"
+                          className="block text-sm font-medium leading-6 text-gray-900"
+                        >
+                          Picture
+                        </label>
+                        <div className="mt-2">
+                          <input
+                            type="text"
+                            name="picture"
+                            value={formData.picture}
+                            onChange={handleChange}
+                            required
+                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <label
+                          htmlFor="email"
+                          className="block text-sm font-medium leading-6 text-gray-900"
+                        >
+                          Event Timing
+                        </label>
+                        <div className="mt-2">
+                          <input
+                            type="text"
+                            name="timing"
+                            value={formData.timing}
+                            onChange={handleChange}
+                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <label
+                          htmlFor="email"
+                          className="block text-sm font-medium leading-6 text-gray-900"
+                        >
+                          Prize
+                        </label>
+                        <div className="mt-2">
+                          <input
+                            type="text"
+                            name="prize"
+                            value={formData.prize}
+                            onChange={handleChange}
+                            required
+                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <label
+                          htmlFor="email"
+                          className="block text-sm font-medium leading-6 text-gray-900"
+                        >
+                          Entry Fee:
+                        </label>
+                        <div className="mt-2">
+                          <input
+                            type="number"
+                            name="entryFee"
+                            value={formData.entryFee}
+                            onChange={handleChange}
+                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <label
+                          htmlFor="email"
+                          className="block text-sm font-medium leading-6 text-gray-900"
+                        >
+                          Description
+                        </label>
+                        <div className="mt-2">
+                          <input
+                            name="description"
+                            value={formData.description}
+                            onChange={handleChange}
+                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <button
+                          type="submit"
+                          onClick={handleSubmit}
+                          className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        >
+                          Create
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
         </>
       ) : (
-        <div>
-          <p>You need to be logged in to create an event.</p>
+        <div className="mt-50">
+          <p className="text-xl font-bold text-red-500 text-center">
+            You Dont have an access to this page.
+          </p>
         </div>
       )}
-      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-        <form className="space-y-6" action="#" method="POST">
-          <div>
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium leading-6 text-gray-900"
-            >
-              Email address
-            </label>
-            <div className="mt-2">
-              <input
-                id="email"
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              />
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center justify-between">
-              <label
-                htmlFor="password"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Password
-              </label>
-              <div className="text-sm">
-                <a
-                  href="#"
-                  className="font-semibold text-indigo-600 hover:text-indigo-500"
-                >
-                  Forgot password?
-                </a>
-              </div>
-            </div>
-            <div className="mt-2">
-              <input
-                id="password"
-                name="password"
-                type="password"
-                autoComplete="current-password"
-                required
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              />
-            </div>
-          </div>
-
-          <div>
-            <button
-              type="submit"
-              className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Sign in
-            </button>
-          </div>
-        </form>
-      </div>
     </div>
   );
 };
