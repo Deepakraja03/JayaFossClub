@@ -4,17 +4,18 @@ import axios from "axios";
 import Header from "./components/Header";
 import Image from "next/image";
 import fosslogo from "../Assets/image 5.png";
+import { useRouter } from "next/navigation";
 
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [token, setToken] = useState(null);
-
+  const router = useRouter();
   useEffect(() => {
     // Only run this effect after initial render (componentDidMount in class components)
     if (token) {
       localStorage.setItem("yourAuthToken", token);
-      window.location.href = "/Dashboard"; // Redirect to your protected page
+      router.push("/Dashboard"); // Redirect to your protected page
     }
   }, [token]); // This effect depends on the 'token' state
 

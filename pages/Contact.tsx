@@ -49,10 +49,7 @@ function Contact() {
                 <h2 className="text-3xl font-bold text-gray-200 tracking-tight sm:text-4xl">
                   Meet our team
                 </h2>
-                <p className="text-xl text-gray-500">
-                  Ornare sagittis, suspendisse in hendrerit quis. Sed dui
-                  aliquet lectus sit pretium egestas vel mattis neque.
-                </p>
+                <p className="text-xl text-gray-500"></p>
               </div>
               <ul
                 role="list"

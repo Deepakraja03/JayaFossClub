@@ -1,64 +1,64 @@
 import React from "react";
 import Header from "./components/Header";
 import GalleryCard from "./components/GalleryCard";
+import F2009 from "../Assets/gallery/2009/front_cover 2009.jpg";
+import F2010 from "../Assets/gallery/2010/front_cover 2010.jpg";
+import F2011 from "../Assets/gallery/2011/front_cover 2011.jpg";
+import F2014 from "../Assets/gallery/2014/front_cover 2014.jpg";
+import F2020 from "../Assets/gallery/2020/front_cover 2020.jpg";
+import F2022 from "../Assets/gallery/2022/front_cover 2022.jpg";
+import F2023 from "../Assets/gallery/2022/front_cover 2022.jpg";
 
 function Gallery() {
-  const profiles = [
+  const latestgallery = [
     {
       name: "Software Freedom Day",
       year: "2023",
-      image:
-        "https://www.jayafossclub.org/assets/front_cover%202009.3b072908.jpg",
+      image: F2023,
       link: "2023",
     },
     {
       name: "Software Freedom Day",
       year: "2022",
-      image:
-        "https://www.jayafossclub.org/assets/front_cover%202022.eabf10c2.jpg",
+      image: F2022,
       link: "2022",
     },
     {
       name: "Software Freedom Day",
       year: "2020",
-      image:
-        "https://www.jayafossclub.org/assets/front_cover%202020.49acf4f0.jpg",
+      image: F2020,
       link: "2020",
     },
     {
       name: "Software Freedom Day",
       year: "2014",
-      image:
-        "https://www.jayafossclub.org/assets/front_cover%202014.70f44b03.jpg",
+      image: F2014,
       link: "2014",
     },
   ];
-  const latestgallery = [
+  const oldgallery = [
     {
       name: "Software Freedom Day",
       year: "2011",
-      image:
-        "https://www.jayafossclub.org/assets/front_cover%202011.a83c2043.jpg",
+      image: F2011,
       link: "2011",
     },
     {
       name: "Software Freedom Day",
       year: "2010",
-      image:
-        "https://www.jayafossclub.org/assets/front_cover%202010.66a5931c.jpg",
+      image: F2010,
       link: "2010",
     },
     {
       name: "Software Freedom Day",
       year: "2009",
-      image:
-        "https://www.jayafossclub.org/assets/front_cover%202009.3b072908.jpg",
+      image: F2009,
       link: "2009",
     },
   ];
 
   return (
-    <div className="bg-[url(../Assets/BG.png)] pb-20 bg-no-repeat bg-center bg-cover   ">
+    <div className="bg-[url(../Assets/BG.png)] pb-20 bg-no-repeat bg-center bg-cover ">
       <Header />
       <div className="relative isolate px-6 bg-[url(../Assets/BG.png)] lg:px-8">
         <div className="lg:px-24 pt-10 pb-10">
@@ -68,14 +68,14 @@ function Gallery() {
             </p>
             <div className="md:flex pb-10   md:flex-row  gap-5">
               {/* <Slider {...settings}> */}
-              {profiles.map((profile, index) => (
+              {latestgallery.map((profile, index) => (
                 <GalleryCard key={index} {...profile} />
               ))}
 
               {/* </Slider> */}
             </div>
             <div className="md:flex  md:flex-row  gap-5">
-              {latestgallery.map((profile, index) => (
+              {oldgallery.map((profile, index) => (
                 <GalleryCard key={index} {...profile} />
               ))}
             </div>

@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
 interface Profile {
   name: string;
   year: string;
-  image: string;
+  image: any;
   link: string;
 }
 
@@ -23,7 +24,13 @@ const GalleryCard = ({ name, year, image, link }: Profile) => {
         onMouseLeave={handleHover}
       >
         <div>
-          <img src={image} className="h-[280px]" alt="Profile" />
+          <Image
+            src={image}
+            height={280}
+            width={280}
+            className="h-[280px]"
+            alt="Profile"
+          />
         </div>
         {isHovered ? (
           <div className="profile-card__hover-details text-center absolute top-0 left-0 bg-gray-100 text-gray-800 py-4 px-6 w-full h-full flex flex-col justify-center">
