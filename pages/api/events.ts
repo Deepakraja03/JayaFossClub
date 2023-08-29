@@ -14,6 +14,7 @@ const connectDB = async (): Promise<void> => {
 
 connectDB();
 
+// Add isActive to your EventRequestBody interface
 interface EventRequestBody {
   eventName: string;
   date: Date;
@@ -22,6 +23,7 @@ interface EventRequestBody {
   prize: number;
   entryFee: number;
   description: string;
+  isActive: boolean; // Add this
 }
 
 export default async function handler(
@@ -40,6 +42,12 @@ export default async function handler(
         description,
       } = req.body as EventRequestBody;
 
+      // Check if the event date is before the current date
+      const currentDate = new Date();
+      if (new Date(date).getTime() < currentDate.getTime()) {
+        return res.status(400).json({ error: "Event date is in the past" });
+      }
+
       const event = new Event({
         eventName,
         date,
@@ -48,6 +56,7 @@ export default async function handler(
         prize,
         entryFee,
         description,
+        isActive: true, // Set to true by default when creating the event
       }) as Document;
 
       await event.save();
@@ -58,7 +67,18 @@ export default async function handler(
     }
   } else if (req.method === "GET") {
     try {
-      const events = await Event.find();
+      let events = await Event.find();
+      
+      // Update isActive field for past events
+      const currentDate = new Date();
+      events = events.map((event: any) => {
+        if (new Date(event.date).getTime() < currentDate.getTime()) {
+          event.isActive = false;
+          event.save(); // This is asynchronous, but we ignore the promise here for simplicity
+        }
+        return event;
+      });
+
       res.status(200).json(events);
     } catch (error) {
       res.status(500).json({ error: "Internal server error" });
