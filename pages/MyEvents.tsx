@@ -1,9 +1,21 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Link from "next/link";
 
+interface Event {
+  id: number;
+  eventName: string;
+  href: string;
+  picture: string;
+  imageAlt: string;
+  date: string;
+  prize: string;
+  entryFee: number;
+  description: string;
+}
+
 function MyEvents() {
-  const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState<Event[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -29,11 +41,11 @@ function MyEvents() {
         <div className="relative isolate px-6 bg-[url(../Assets/BG.png)] lg:px-8">
           <div className="lg:px-24 pt-10 pb-10">
             <div>
-              <p className="lg:text-6xl text-4xl text-gray-200 text-center pb-5  font-bold ">
+              <p className="lg:text-6xl text-4xl text-gray-200 text-center pb-5 font-bold ">
                 Events
               </p>
               <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-10 lg:max-w-7xl lg:px-8">
-                <div className="   grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+                <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
                   {events.length === 0 ? (
                     <p className="text-center text-white text-xl py-40">
                       No Upcoming Events Created.
@@ -44,7 +56,7 @@ function MyEvents() {
                         key={event.id}
                         className="group bg-gray-200 rounded-lg text-center relative"
                       >
-                        <div className="  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none  lg:h-80">
+                        <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none  lg:h-80">
                           <img
                             src={`data:image/jpeg;base64,${event.picture}`}
                             alt={event.imageAlt}
@@ -71,7 +83,7 @@ function MyEvents() {
                             <p className=" text-md flex justify-center pb-2 px-5  text-black">
                               <span>Entry Fee: </span>
                               <span>
-                                {event.entryFee == 0 ? (
+                                {event.entryFee === 0 ? (
                                   <>Free</>
                                 ) : (
                                   <>{event.entryFee}</>
