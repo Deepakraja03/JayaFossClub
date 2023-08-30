@@ -4,6 +4,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Header from "./components/Header";
 import DashNav from "./components/DashNav";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const events = [
   {
@@ -18,7 +19,26 @@ const events = [
 
 const Dashboard: React.FC = () => {
   const [authToken, setAuthToken] = useState<string | null>(null);
-  console.log(authToken);
+
+  const [events, setEvents] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/api/events");
+        const data = await response.json();
+        setEvents(data);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching events:", error);
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+  console.log(events);
   useEffect(() => {
     // Check for token in local storage and update state
     if (typeof window !== "undefined") {
@@ -52,32 +72,40 @@ const Dashboard: React.FC = () => {
                           key={event.id}
                           className="group bg-gray-200 rounded-lg text-center relative"
                         >
-                          <div className="  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none   hover:cursor-none group-hover:opacity-75 lg:h-80">
+                          <div className="  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none  lg:h-80">
                             <img
-                              src={event.imageSrc}
+                              src={`data:image/jpeg;base64,${event.picture}`}
                               alt={event.imageAlt}
-                              className="h-full w-full  py-1 px-1 object-center lg:h-full lg:w-full"
+                              className="h-full w-full hover:opacity-75  py-1 px-1 object-center lg:h-full lg:w-full"
                             />
                           </div>
                           <div className="my-2 ">
                             <div>
-                              <h3 className="text-lg text-gray-700">
+                              <h3 className="text-lg text-black">
                                 <a href={event.href}>
-                                  <span
-                                    aria-hidden="true"
-                                    className="absolute inset-0"
-                                  />
-                                  {event.name}
+                                  <span />
+                                  {event.eventName}
                                 </a>
                               </h3>
-                              <p className="mt-1 text-md flex justify-center py-1 px-5  text-gray-800">
+                              <p>
+                                Date:{" "}
+                                {
+                                  new Date(event.date)
+                                    .toISOString()
+                                    .split("T")[0]
+                                }
+                              </p>
+
+                              <p className="mt-1 text-md flex justify-center py-1 px-5  text-black">
                                 <span>Co-ordinator:</span>
-                                <span>{event.coordinator}</span>
+                                <span>{event.prize}</span>
                               </p>
                             </div>
-                            <button className="bg-blue-600 px-4 py-3 rounded-lg text-lg">
-                              Register
-                            </button>
+                            <Link href={event.description}>
+                              <button className="bg-blue-600 px-4 py-3 rounded-lg text-lg">
+                                Register
+                              </button>
+                            </Link>
                           </div>
                         </div>
                       ))}

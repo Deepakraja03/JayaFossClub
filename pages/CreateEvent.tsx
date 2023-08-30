@@ -2,6 +2,9 @@
 import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import DashNav from "./components/DashNav";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 interface FormData {
   eventName: string;
   date: string;
@@ -36,12 +39,16 @@ const CreateEvent: React.FC = () => {
 
       if (response.ok) {
         console.log("Event created successfully");
+        toast.success("Event Created Successfully!");
+
         // Clear form fields or show success message
       } else {
         console.error("Error creating event");
+        toast.error("Complete all fields!");
       }
     } catch (error) {
       console.error("Error creating event:", error);
+      toast.error(error);
     }
   };
 
@@ -61,6 +68,28 @@ const CreateEvent: React.FC = () => {
       setAuthToken(token);
     }
   }, []);
+
+  const [base64String, setBase64String] = useState("");
+
+  const handleImageUpload = (event: any) => {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+
+    reader.onloadend = () => {
+      const base64 = reader?.result?.split(",")[1]; // Remove the 'data:image/jpeg;base64,' part
+      setBase64String(base64);
+      console.log(base64);
+
+      // Update the formData state with the base64 string
+      setFormData((prevData) => ({
+        ...prevData,
+        picture: base64,
+      }));
+    };
+
+    reader.readAsDataURL(file);
+  };
+
   return (
     <div>
       {authToken ? (
@@ -76,7 +105,7 @@ const CreateEvent: React.FC = () => {
               </div>
             </header>
             <main>
-              <div className="mx-auto max-w-7xl py-6 sm:px-6 rounded-lg bg-gray-300 lg:px-8">
+              <div className="md:mx-auto mx-5 px-4 max-w-7xl py-6 sm:px-6 rounded-lg  bg-gray-300 lg:px-8">
                 <div className="lg:px-24  py-5">
                   <div className=" sm:mx-auto sm:w-full sm:max-w-sm">
                     <div className="space-y-6">
@@ -94,7 +123,7 @@ const CreateEvent: React.FC = () => {
                             value={formData.eventName}
                             onChange={handleChange}
                             required
-                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                           />
                         </div>
                       </div>
@@ -115,7 +144,7 @@ const CreateEvent: React.FC = () => {
                             value={formData.date}
                             onChange={handleChange}
                             required
-                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                           />
                         </div>
                       </div>
@@ -129,12 +158,12 @@ const CreateEvent: React.FC = () => {
                         </label>
                         <div className="mt-2">
                           <input
-                            type="text"
+                            type="file" // Change from 'text' to 'file'
                             name="picture"
-                            value={formData.picture}
-                            onChange={handleChange}
+                            accept="image/*" // Optional: this will restrict uploads to image files
+                            onChange={handleImageUpload}
                             required
-                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                           />
                         </div>
                       </div>
@@ -151,7 +180,7 @@ const CreateEvent: React.FC = () => {
                             name="timing"
                             value={formData.timing}
                             onChange={handleChange}
-                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                           />
                         </div>
                       </div>
@@ -160,7 +189,7 @@ const CreateEvent: React.FC = () => {
                           htmlFor="email"
                           className="block text-sm font-medium leading-6 text-gray-900"
                         >
-                          Prize
+                          Co-Ordinator
                         </label>
                         <div className="mt-2">
                           <input
@@ -169,7 +198,7 @@ const CreateEvent: React.FC = () => {
                             value={formData.prize}
                             onChange={handleChange}
                             required
-                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                           />
                         </div>
                       </div>
@@ -182,11 +211,11 @@ const CreateEvent: React.FC = () => {
                         </label>
                         <div className="mt-2">
                           <input
-                            type="number"
+                            type="text"
                             name="entryFee"
                             value={formData.entryFee}
                             onChange={handleChange}
-                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                           />
                         </div>
                       </div>
@@ -195,14 +224,14 @@ const CreateEvent: React.FC = () => {
                           htmlFor="email"
                           className="block text-sm font-medium leading-6 text-gray-900"
                         >
-                          Description
+                          Link to GForm
                         </label>
                         <div className="mt-2">
                           <input
                             name="description"
                             value={formData.description}
                             onChange={handleChange}
-                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                           />
                         </div>
                       </div>
@@ -217,6 +246,7 @@ const CreateEvent: React.FC = () => {
                       </div>
                     </div>
                   </div>
+                  <ToastContainer />
                 </div>
               </div>
             </main>

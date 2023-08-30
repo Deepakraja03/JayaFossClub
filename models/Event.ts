@@ -4,6 +4,7 @@ interface IEvent extends Document {
   eventName: string;
   date: Date;
   picture: string;
+  coordinator: string;
   timing: string;
   prize: string;
   entryFee: number;
@@ -16,6 +17,7 @@ const eventSchema: Schema = new Schema({
   date: { type: Date, required: true },
   picture: { type: String, required: true },
   timing: { type: String, required: false },
+  coordinator: { type: String, required: false },
   prize: { type: String, required: false },
   entryFee: { type: Number, required: false },
   isActive: { type: Boolean, default: true },

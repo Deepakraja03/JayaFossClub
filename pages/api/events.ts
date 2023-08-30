@@ -19,6 +19,7 @@ interface EventRequestBody {
   eventName: string;
   date: Date;
   picture: string;
+  coordinator: string;
   timing: string;
   prize: number;
   entryFee: number;
@@ -36,6 +37,7 @@ export default async function handler(
         eventName,
         date,
         picture,
+        coordinator,
         timing,
         prize,
         entryFee,
@@ -52,6 +54,7 @@ export default async function handler(
         eventName,
         date,
         picture,
+        coordinator,
         timing,
         prize,
         entryFee,
