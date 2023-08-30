@@ -48,7 +48,7 @@ const CreateEvent: React.FC = () => {
       }
     } catch (error) {
       console.error("Error creating event:", error);
-      toast.error(error);
+      toast.error(`Error creating event: ${error}`);
     }
   };
 
