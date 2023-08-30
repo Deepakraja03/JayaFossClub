@@ -44,7 +44,7 @@ const CreateEvent: React.FC = () => {
         // Clear form fields or show success message
       } else {
         console.error("Error creating event");
-        toast.error("Complete all fields!");
+        toast.error(`Error creating event: ${response}`);
       }
     } catch (error) {
       console.error("Error creating event:", error);
