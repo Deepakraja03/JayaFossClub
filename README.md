@@ -23,35 +23,25 @@ Welcome to the GitHub repository for the Event Management System for Software Fr
 ### Installation
 
 1. Clone this repository
-
-   \
    git clone https://github.com/vmmuthu31/JayaFossClub
-   \
+   
 
 2. Install Backend Dependencies
-
-   \
    cd server
    npm install
-   \
 
 3. Install Frontend Dependencies
-
-   \
    cd client
    npm install
-   \
 
 4. Run Development Servers
-
-   \
    # Run frontend
    npm start
    
    # Run backend
    cd server
    npm run dev
-   \
+   
 
 ## How to Contribute
 
