@@ -76,11 +76,11 @@ const CreateEvent: React.FC = () => {
     const reader = new FileReader();
 
     reader.onloadend = () => {
-      const base64 = reader?.result?.split(",")[1]; // Remove the 'data:image/jpeg;base64,' part
+      const result = reader.result as string; // Type assertion to specify it's a string
+      const base64 = result.split(",")[1]; // Extract the base64 data
       setBase64String(base64);
       console.log(base64);
 
-      // Update the formData state with the base64 string
       setFormData((prevData) => ({
         ...prevData,
         picture: base64,
