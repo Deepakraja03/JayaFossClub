@@ -109,7 +109,7 @@ const PastEvent: React.FC = () => {
                                     {event.entryFee === 0 ? (
                                       <>Free</>
                                     ) : (
-                                      <>{event.entryFee}</>
+                                      <> {event.entryFee}</>
                                     )}
                                   </span>
                                 </p>

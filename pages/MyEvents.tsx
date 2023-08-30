@@ -86,7 +86,7 @@ function MyEvents() {
                                 {event.entryFee == 0 ? (
                                   <>Free</>
                                 ) : (
-                                  <>₹{event.entryFee}</>
+                                  <> ₹{event.entryFee}</>
                                 )}
                               </span>
                             </p>
