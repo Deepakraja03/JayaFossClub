@@ -113,11 +113,18 @@ const Dashboard: React.FC = () => {
                                   </span>
                                 </p>
                               </div>
-                              <Link href={event.description} target="_blank">
-                                <button className="bg-blue-600 px-4 py-3 rounded-lg text-lg">
-                                  Register
-                                </button>
-                              </Link>
+                              <div className="flex justify-center space-x-3">
+                                <Link href={event.description} target="_blank">
+                                  <button className="bg-blue-600 px-4 py-3 rounded-lg text-lg">
+                                    Register
+                                  </button>
+                                </Link>
+                                <Link href={event.description} target="_blank">
+                                  <button className="bg-red-600 px-4 py-3 rounded-lg text-lg">
+                                    Delete
+                                  </button>
+                                </Link>
+                              </div>
                             </div>
                           </div>
                         ))
