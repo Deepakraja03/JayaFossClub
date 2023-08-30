@@ -1,34 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+"""
+# Software Free Day - Event Management System
+
+## Introduction
+
+Welcome to the GitHub repository for the Event Management System for Software Free Day! This open-source project aims to provide an end-to-end solution for managing events, from registration to attendance tracking, all built on free and open-source software. Your contributions are not only welcomed but highly appreciated!
+
+## Features
+
+- User authentication
+- Event creation and management
+- Ticketing system
+- Real-time updates
+- Admin dashboard
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Node.js
+- MongoDB
+- Git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. Clone this repository
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+   \```bash
+   git clone https://github.com/vmmuthu31/JayaFossClub
+   \```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+2. Install Backend Dependencies
 
-## Learn More
+   \```bash
+   cd server
+   npm install
+   \```
 
-To learn more about Next.js, take a look at the following resources:
+3. Install Frontend Dependencies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   \```bash
+   cd client
+   npm install
+   \```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Run Development Servers
 
-## Deploy on Vercel
+   \```bash
+   # Run frontend
+   npm start
+   
+   # Run backend
+   cd server
+   npm run dev
+   \```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## How to Contribute
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Fork the repository
+2. Create a new feature branch
+3. Make your changes
+4. Create a pull request
+
+For more detailed information, refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
+## Roadmap
+
+- Implement real-time chat for event attendees
+- Add support for online events
+- Provide multi-language support
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Acknowledgments
+
+- All contributors who help improve this project
+- The Software Free Day community for inspiring this project
+
+## Contact
+
+If you have any questions, feel free to open an issue or reach out to the maintainers.
+
+---
+
+Join us in making event management hassle-free and contributing to the spirit of Software Free Day!
+"""
