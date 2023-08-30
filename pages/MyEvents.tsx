@@ -83,10 +83,10 @@ function MyEvents() {
                             <p className=" text-md flex justify-center pb-2 px-5  text-black">
                               <span>Entry Fee: </span>
                               <span>
-                                {event.entryFee === 0 ? (
+                                {event.entryFee == 0 ? (
                                   <>Free</>
                                 ) : (
-                                  <>{event.entryFee}</>
+                                  <>₹{event.entryFee}</>
                                 )}
                               </span>
                             </p>
