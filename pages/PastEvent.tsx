@@ -6,18 +6,7 @@ import DashNav from "./components/DashNav";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
-const events = [
-  {
-    id: 1,
-    name: "Debugging",
-    href: "#",
-    imageSrc: "https://spotme.com/wp-content/uploads/2020/07/Hero-1.jpg",
-    imageAlt: "Front of men's Basic Tee in black.",
-    coordinator: "Emmaunel",
-  },
-];
-
-const Dashboard: React.FC = () => {
+const PastEvent: React.FC = () => {
   const [authToken, setAuthToken] = useState<string | null>(null);
 
   const [events, setEvents] = useState([]);
@@ -47,6 +36,8 @@ const Dashboard: React.FC = () => {
     }
   }, []);
 
+  const pastEvents = events.filter((event) => !event?.isActive);
+
   return (
     <>
       {authToken ? (
@@ -67,35 +58,33 @@ const Dashboard: React.FC = () => {
                   <p className="lg:text-3xl text-xl text-black text-left pb-5  font-bold "></p>
                   <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-5 lg:max-w-7xl lg:px-8">
                     <div className="   grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-                      {events.length === 0 ? (
-                        <p className="text-center">
-                          No Upcoming Events Created.
-                        </p>
+                      {pastEvents.length === 0 ? (
+                        <p className="text-center">No Past Events created.</p>
                       ) : (
-                        events.map((event) => (
+                        pastEvents.map((event) => (
                           <div
-                            key={event.id}
+                            key={event?.id}
                             className="group bg-gray-200 rounded-lg text-center relative"
                           >
                             <div className="  aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none  lg:h-80">
                               <img
-                                src={`data:image/jpeg;base64,${event.picture}`}
-                                alt={event.imageAlt}
+                                src={`data:image/jpeg;base64,${event?.picture}`}
+                                alt={event?.imageAlt}
                                 className="h-full w-full hover:opacity-75  py-1 px-1 object-center lg:h-full lg:w-full"
                               />
                             </div>
                             <div className="my-2 ">
                               <div>
                                 <h3 className="text-lg text-black">
-                                  <a href={event.href}>
+                                  <a href={event?.href}>
                                     <span />
-                                    {event.eventName}
+                                    {event?.eventName}
                                   </a>
                                 </h3>
                                 <p>
                                   Date:{" "}
                                   {
-                                    new Date(event.date)
+                                    new Date(event?.date)
                                       .toISOString()
                                       .split("T")[0]
                                   }
@@ -103,7 +92,7 @@ const Dashboard: React.FC = () => {
 
                                 <p className=" text-md flex justify-center  px-5  text-black">
                                   <span>Co-ordinator:</span>
-                                  <span>{event.prize}</span>
+                                  <span>{event?.prize}</span>
                                 </p>
                                 <p className=" text-md flex justify-center pb-2 px-5  text-black">
                                   <span>Entry Fee: </span>
@@ -116,7 +105,7 @@ const Dashboard: React.FC = () => {
                                   </span>
                                 </p>
                               </div>
-                              <Link href={event.description} target="_blank">
+                              <Link href={event?.description} target="_blank">
                                 <button className="bg-blue-600 px-4 py-3 rounded-lg text-lg">
                                   Register
                                 </button>
@@ -143,4 +132,4 @@ const Dashboard: React.FC = () => {
   );
 };
 
-export default Dashboard;
+export default PastEvent;

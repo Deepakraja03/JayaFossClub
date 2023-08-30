@@ -16,8 +16,8 @@ interface NavigationItem {
 const navigation: NavigationItem[] = [
   { name: "Home", href: "/Dashboard" },
   { name: "Create Event", href: "/CreateEvent" },
-  { name: "Upcoming Events", href: "/CreateEvent" },
-  { name: "Past Events", href: "/CreateEvent" },
+
+  { name: "Past Events", href: "/PastEvent" },
 ];
 
 function classNames(...classes: (string | undefined)[]) {

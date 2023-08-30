@@ -22,7 +22,7 @@ interface EventRequestBody {
   coordinator: string;
   timing: string;
   prize: number;
-  entryFee: number;
+  entryFee: string;
   description: string;
   isActive: boolean; // Add this
 }

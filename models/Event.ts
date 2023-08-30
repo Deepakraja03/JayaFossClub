@@ -7,7 +7,7 @@ interface IEvent extends Document {
   coordinator: string;
   timing: string;
   prize: string;
-  entryFee: number;
+  entryFee: string;
   isActive: boolean;
   description: string;
 }
@@ -19,7 +19,7 @@ const eventSchema: Schema = new Schema({
   timing: { type: String, required: false },
   coordinator: { type: String, required: false },
   prize: { type: String, required: false },
-  entryFee: { type: Number, required: false },
+  entryFee: { type: String, required: false },
   isActive: { type: Boolean, default: true },
   description: { type: String, required: false },
 });
