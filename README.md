@@ -1,4 +1,3 @@
-"""
 # Software Free Day - Event Management System
 
 ## Introduction
@@ -25,34 +24,34 @@ Welcome to the GitHub repository for the Event Management System for Software Fr
 
 1. Clone this repository
 
-   \```bash
+   \
    git clone https://github.com/vmmuthu31/JayaFossClub
-   \```
+   \
 
 2. Install Backend Dependencies
 
-   \```bash
+   \
    cd server
    npm install
-   \```
+   \
 
 3. Install Frontend Dependencies
 
-   \```bash
+   \
    cd client
    npm install
-   \```
+   \
 
 4. Run Development Servers
 
-   \```bash
+   \
    # Run frontend
    npm start
    
    # Run backend
    cd server
    npm run dev
-   \```
+   \
 
 ## How to Contribute
 
@@ -85,4 +84,3 @@ If you have any questions, feel free to open an issue or reach out to the mainta
 ---
 
 Join us in making event management hassle-free and contributing to the spirit of Software Free Day!
-"""
