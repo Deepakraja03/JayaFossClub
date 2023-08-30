@@ -11,12 +11,12 @@ import F2023 from "../Assets/gallery/2022/front_cover 2022.jpg";
 
 function Gallery() {
   const latestgallery = [
-    {
-      name: "Software Freedom Day",
-      year: "2023",
-      image: F2023,
-      link: "2023",
-    },
+    // {
+    //   name: "Software Freedom Day",
+    //   year: "2023",
+    //   image: F2023,
+    //   link: "2023",
+    // },
     {
       name: "Software Freedom Day",
       year: "2022",
