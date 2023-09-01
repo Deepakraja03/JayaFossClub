@@ -194,7 +194,7 @@ export default function Home() {
                   <tr>
                     <td className="border-b lg:px-5 lg:py-5">Inaugration</td>
                     <td className="border-b  lg:px-5 lg:py-5">
-                      5:00 PM - 8:00 PM
+                      9:00 AM - 10:00 AM
                     </td>
                     <td className="border-b lg:px-5 lg:py-5">Seminar Hall</td>
                   </tr>
