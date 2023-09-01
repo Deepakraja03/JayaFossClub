@@ -20,20 +20,21 @@ function MyEvents() {
 
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true);
       try {
         const response = await fetch("/api/events");
         const data = await response.json();
         setEvents(data);
-        setLoading(false);
       } catch (error) {
         console.error("Error fetching events:", error);
+      } finally {
         setLoading(false);
       }
     };
 
     fetchData();
   }, []);
-  console.log(events);
+
   return (
     <div>
       <div className="bg-[url(../Assets/BG.png)] pb-20 bg-no-repeat bg-center bg-cover ">
@@ -46,7 +47,11 @@ function MyEvents() {
               </p>
               <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-10 lg:max-w-7xl lg:px-8">
                 <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-                  {events.length === 0 ? (
+                  {loading ? (
+                    <div className=" text-center text-white text-xl py-40 spinner">
+                      Loading...
+                    </div>
+                  ) : events.length === 0 ? (
                     <p className="text-center text-white text-xl py-40">
                       No Upcoming Events Created.
                     </p>
