@@ -217,31 +217,31 @@ export default function Home() {
                     <td className="border-b lg:px-5 lg:py-2">Not Allocated</td>
                   </tr>
                   <tr>
-                    <td className="border-b lg:px-5 lg:py-5">Quiz</td>
+                    <td className="border-b lg:px-5 lg:py-5">Tech Trek</td>
                     <td className="border-b lg:px-5 lg:py-2">
-                      1:00 PM - 3:00 PM
+                      11:15 AM – 12:00 PM
                     </td>
                     <td className="border-b lg:px-5 lg:py-2">Not Allocated</td>
                   </tr>
                   <tr>
-                    <td className="border-b lg:px-5 lg:py-5">Short Film</td>
+                    <td className="border-b lg:px-5 lg:py-5">
+                      Codeless canvas
+                    </td>
                     <td className="border-b lg:px-5 lg:py-2">
-                      1:00 PM - 3:00 PM
+                      12:00 PM – 12:45 PM
                     </td>
                     <td className="border-b lg:px-5 lg:py-2">Not Allocated</td>
                   </tr>
                   <tr>
+                    <td className="border-b lg:px-5 lg:py-2">Brain Wave</td>
                     <td className="border-b lg:px-5 lg:py-2">
-                      Connecting Thoughts
-                    </td>
-                    <td className="border-b lg:px-5 lg:py-2">
-                      1:00 PM - 3:00 PM
+                      1.20 PM – 2.30 PM
                     </td>
                     <td className="border-b lg:px-5 lg:py-2">Not Allocated</td>
                   </tr>
                   <tr>
-                    <td>Debate</td>
-                    <td>6:00 PM - 9:00 PM</td>
+                    <td>Code Quest</td>
+                    <td>1.35 PM – 2.30 PM</td>
                     <td>Not Allocated</td>
                   </tr>
                 </tbody>
