@@ -224,25 +224,23 @@ export default function Home() {
                     <td className="border-b lg:px-5 lg:py-2">Not Allocated</td>
                   </tr>
                   <tr>
-                    <td className="border-b lg:px-5 lg:py-5">
-                      Codeless canvas
-                    </td>
+                    <td className="border-b lg:px-5 lg:py-5">Quest</td>
                     <td className="border-b lg:px-5 lg:py-2">
                       12:00 PM – 12:45 PM
                     </td>
                     <td className="border-b lg:px-5 lg:py-2">Not Allocated</td>
                   </tr>
                   <tr>
-                    <td className="border-b lg:px-5 lg:py-2">Brain Wave</td>
+                    <td className="border-b lg:px-5 lg:py-5">Brain Wave</td>
                     <td className="border-b lg:px-5 lg:py-2">
                       1.20 PM – 2.30 PM
                     </td>
                     <td className="border-b lg:px-5 lg:py-2">Not Allocated</td>
                   </tr>
                   <tr>
-                    <td>Code Quest</td>
-                    <td>1.35 PM – 2.30 PM</td>
-                    <td>Not Allocated</td>
+                    <td className="lg:px-5 lg:py-5">Code Quest</td>
+                    <td className="lg:px-5 lg:py-2">1.35 PM – 2.30 PM</td>
+                    <td className=" lg:px-5 lg:py-2">Not Allocated</td>
                   </tr>
                 </tbody>
               </table>
