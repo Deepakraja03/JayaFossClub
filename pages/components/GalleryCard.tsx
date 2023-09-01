@@ -28,7 +28,7 @@ const GalleryCard = ({ name, year, image, link }: Profile) => {
             src={image}
             height={280}
             width={280}
-            className="h-[280px]"
+            className="h-[280px] w-full"
             alt="Profile"
           />
         </div>
