@@ -38,7 +38,7 @@ export default function Home() {
       const minutes = Math.floor((diffInSeconds % 3600) / 60);
       const seconds = diffInSeconds % 60;
 
-      setTimeLeft(`${days} days ${hours} hrs ${minutes} min ${seconds} sec `);
+      setTimeLeft(`Only ${days} days ${hours} hrs ${minutes} mins Remaining! `);
     }, 1000);
 
     return () => clearInterval(intervalId);
@@ -99,19 +99,18 @@ export default function Home() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <button className="text-lg  leading-6 text-[#0B081C] px-6 py-2 rounded-3xl bg-[#ECECEC]">
                 <span className="md:flex ">
-                  <h1 className="">Countdown to Software Freedom Day &nbsp;</h1>
                   <h2>
                     {timeLeft}&nbsp;
                     <br />{" "}
                   </h2>{" "}
+                  <a
+                    href="https://www.softwarefreedomday.org/"
+                    className=" underline"
+                    target="_blank"
+                  >
+                    Explore
+                  </a>
                 </span>
-                <a
-                  href="https://www.softwarefreedomday.org/"
-                  className=" underline"
-                  target="_blank"
-                >
-                  Click Here
-                </a>
               </button>
             </div>
           </div>
