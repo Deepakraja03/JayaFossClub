@@ -3,8 +3,43 @@ import Softwarlogo from "../Assets/image 9.png";
 import Image from "next/image";
 import { BsRocketTakeoff } from "react-icons/bs";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [timeLeft, setTimeLeft] = useState<string>("");
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const now = new Date();
+      const currentYear = now.getFullYear();
+      let softwareFreedomDay = new Date(`${currentYear}-09-16T00:00:00`);
+
+      // If Software Freedom Day has already passed for this year, set it to next year
+      if (now > softwareFreedomDay) {
+        softwareFreedomDay = new Date(`${currentYear + 1}-09-16T00:00:00`);
+      }
+
+      const diffInSeconds = Math.floor(
+        (softwareFreedomDay.getTime() - now.getTime()) / 1000
+      );
+
+      if (diffInSeconds <= 0) {
+        clearInterval(intervalId);
+        setTimeLeft("It's Software Freedom Day!");
+        return;
+      }
+
+      const days = Math.floor(diffInSeconds / 86400);
+      const hours = Math.floor((diffInSeconds % 86400) / 3600);
+      const minutes = Math.floor((diffInSeconds % 3600) / 60);
+      const seconds = diffInSeconds % 60;
+
+      setTimeLeft(`${days} days ${hours} hrs ${minutes} min ${seconds} sec `);
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   const Personalities = [
     {
       id: 1,
@@ -12,7 +47,8 @@ export default function Home() {
       description:
         "Richard Matthew Stallman, also known by his initials, rms, is an American free software movement activist and programmer. He campaigns for software to be distributed in such a manner that its users have the freedom to use, study, distribute, and modify that software.",
 
-      imageSrc: "https://www.jayafossclub.org/assets/rms.0c692554.jpeg",
+      imageSrc:
+        "https://images.yourstory.com/cs/wordpress/2017/08/Richard-Stallman.jpg?w=1152&fm=auto&ar=2:1&mode=crop&crop=faces",
       imageAlt: "",
     },
     {
@@ -58,12 +94,22 @@ export default function Home() {
               Source Software among student and industry people.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a href="https://www.softwarefreedomday.org/" target="_blank">
-                {" "}
-                <button className="text-lg  leading-6 text-[#0B081C] px-6 py-2 rounded-3xl bg-[#ECECEC]">
-                  Software Freedom Day
-                </button>
-              </a>
+              <button className="text-lg  leading-6 text-[#0B081C] px-6 py-2 rounded-3xl bg-[#ECECEC]">
+                <span className="md:flex ">
+                  <h1 className="">Countdown to Software Freedom Day &nbsp;</h1>
+                  <h2>
+                    {timeLeft}&nbsp;
+                    <br />{" "}
+                  </h2>{" "}
+                </span>
+                <a
+                  href="https://www.softwarefreedomday.org/"
+                  className=" underline"
+                  target="_blank"
+                >
+                  Click Here
+                </a>
+              </button>
             </div>
           </div>
           <div className="text-center pt-16">
@@ -218,7 +264,6 @@ export default function Home() {
                 </div>
                 <div className="flex-1 p-4 space-y-2 flex flex-col">
                   <h3 className=" text-white text-2xl font-semibold">
-                    <span aria-hidden="true" className="absolute inset-0" />
                     {personality.name}
                   </h3>
                   <p className="text-sm text-gray-400">
