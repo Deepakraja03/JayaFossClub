@@ -4,6 +4,10 @@ import Image from "next/image";
 import { BsRocketTakeoff } from "react-icons/bs";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import H1 from "../Assets/gallery/H1.avif";
+import H2 from "../Assets/gallery/H2.jpeg";
+import H3 from "../Assets/gallery/H3.jpg";
+import Poster from "../Assets/gallery/Poster.jpg";
 
 export default function Home() {
   const [timeLeft, setTimeLeft] = useState<string>("");
@@ -47,8 +51,7 @@ export default function Home() {
       description:
         "Richard Matthew Stallman, also known by his initials, rms, is an American free software movement activist and programmer. He campaigns for software to be distributed in such a manner that its users have the freedom to use, study, distribute, and modify that software.",
 
-      imageSrc:
-        "https://images.yourstory.com/cs/wordpress/2017/08/Richard-Stallman.jpg?w=1152&fm=auto&ar=2:1&mode=crop&crop=faces",
+      imageSrc: H1,
       imageAlt: "",
     },
     {
@@ -56,7 +59,7 @@ export default function Home() {
       name: "Linus Torvalds",
       description:
         "Linus Benedict Torvalds is a Finnish -American software engineer who is the creator and, historically, the main developer of the Linux kernel, used by Linux distributions and other operating systems such as Android. He also created the distributed version control system Git.",
-      imageSrc: "https://www.jayafossclub.org/assets/linus.5e48d956.jpg",
+      imageSrc: H2,
       imageAlt: "",
     },
     {
@@ -64,7 +67,7 @@ export default function Home() {
       name: "Guido Van Rossum",
       description:
         "Guido van Rossum is a Dutch programmer best known as the creator of the Python programming language, for which he was the benevolent dictator for life until he stepped down from the position on 12 July 2018",
-      imageSrc: "https://www.jayafossclub.org/assets/gvr.4eb99bb4.jpeg",
+      imageSrc: H3,
       imageAlt: "",
     },
   ];
@@ -169,9 +172,9 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row text-center justify-center lg:space-x-20   text-white">
           <div>
             <p className="text-5xl font-semibold py-10">Invitation</p>
-            <img
+            <Image
               className="rounded-3xl colored-shadow lg:h-[800px] lg:w-[750px] h-auto w-auto"
-              src="https://www.jayafossclub.org/assets/poster_mobile.3e2abd60.jpg"
+              src={Poster}
               alt=""
             />
           </div>
@@ -245,7 +248,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <p className="text-5xl  font-semibold pt-20 pb-10 text-gray-400 text-center">
+          <p className="text-5xl  font-semibold pt-20 pb-10 text-gray-300 text-center">
             {" "}
             Great Personalities
           </p>
@@ -256,9 +259,11 @@ export default function Home() {
                 className="group relative colored-shadow bg-[#250c2c]  rounded-lg flex flex-col overflow-hidden"
               >
                 <div className="aspect-w-3 aspect-h-4 bg-[#250c2c] group-hover:opacity-75 sm:aspect-none sm:h-96">
-                  <img
+                  <Image
                     src={personality.imageSrc}
                     alt={personality.imageAlt}
+                    width={480}
+                    height={480}
                     className="w-full h-full p-10 object-center object-cover sm:w-full sm:h-full"
                   />
                 </div>
