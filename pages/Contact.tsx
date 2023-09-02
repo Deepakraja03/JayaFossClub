@@ -4,11 +4,11 @@ import Header from "./components/Header";
 function Contact() {
   const people = [
     {
-      name: "Maheshwaran",
-      role: "Event Co-Ordinator",
+      name: "Thilagavathi V",
+      role: "Open Tech Co-Ordinator",
       imageUrl:
-        "https://media.licdn.com/dms/image/D5603AQHuWnRJRgRPhg/profile-displayphoto-shrink_100_100/0/1673365056152?e=1698883200&v=beta&t=hp-Fc3V7FBG81n0OGQYlwcnx9neRyY1sHX9oLmCyQPc",
-      mobilenumber: "+887087045",
+        "https://blogger.googleusercontent.com/img/a/AVvXsEgtamlGyzDuvBK8GLIQ_YNHNOIQrenRpn18BLau7ZgkPD2s9IA05nWPkxtT36mRnLjplPhbzHH_6Y9g7Qa8VzTDXeXRW0AQeVqA-KGuCBT-DIXBhbmOrFNG1Z-GHduw2vofjoFcDxPykBKsWkrbCOq4RLJjHeqvwl0Qf0W7WZSYtndd4zVWEsFUFOP4Rp8",
+      mobilenumber: "+919840137428",
     },
 
     // More people...
