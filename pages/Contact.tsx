@@ -18,11 +18,11 @@ function Contact() {
       mobilenumber: "+918838461032",
     },
     {
-      name: "Thilagavathi V",
-      role: "Open Tech Co-Ordinator",
+      name: "Ganesh P",
+      role: "Tech Trek Co-Ordinator",
       imageUrl:
-        "https://blogger.googleusercontent.com/img/a/AVvXsEgtamlGyzDuvBK8GLIQ_YNHNOIQrenRpn18BLau7ZgkPD2s9IA05nWPkxtT36mRnLjplPhbzHH_6Y9g7Qa8VzTDXeXRW0AQeVqA-KGuCBT-DIXBhbmOrFNG1Z-GHduw2vofjoFcDxPykBKsWkrbCOq4RLJjHeqvwl0Qf0W7WZSYtndd4zVWEsFUFOP4Rp8",
-      mobilenumber: "+919840137428",
+        "https://blogger.googleusercontent.com/img/a/AVvXsEgGHr4jx8z0A6pdB4jVFzWNw6v4ksPJ3ipxmbSORcSkZDZCtNBqwGlOk2KLQC5_isk7Ahmc9o8UwhoLUW3RwvWV0ZvaudnGTgrIul4-UUnCnyb1L6hmlnWB0c1TsPqIWRErmrvbp8_Gu4ZJvwqIjfd97u9ian1AaeqiCS5Ynr_LKdNBYTVKLW_YCw3epSU",
+      mobilenumber: "+916383328121",
     },
     {
       name: "Thilagavathi V",
