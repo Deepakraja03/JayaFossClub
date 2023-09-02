@@ -10,6 +10,41 @@ function Contact() {
         "https://blogger.googleusercontent.com/img/a/AVvXsEgtamlGyzDuvBK8GLIQ_YNHNOIQrenRpn18BLau7ZgkPD2s9IA05nWPkxtT36mRnLjplPhbzHH_6Y9g7Qa8VzTDXeXRW0AQeVqA-KGuCBT-DIXBhbmOrFNG1Z-GHduw2vofjoFcDxPykBKsWkrbCOq4RLJjHeqvwl0Qf0W7WZSYtndd4zVWEsFUFOP4Rp8",
       mobilenumber: "+919840137428",
     },
+    {
+      name: "Rishika S.V",
+      role: "WHISPERS OF EVIDENCE Co-Ordinator",
+      imageUrl:
+        "https://blogger.googleusercontent.com/img/a/AVvXsEj4EhqLbkwC44723assY0HN5j_Ng3SNKsPlK22Ygyr3ZMy8Oc4oulZ2tm0wtutTlh3dTqMA7TOsX_s7VyC5dJIChAfAORqAAOYRLKpyrM5OIa5q_LZ3hGwCgRO9OPdYCH0nnNQ3wv7A2-UTbvt79JOyJs1yfyqmme3Tl8YVfc3aj4OeEh1nC5SUJHf3ECs",
+      mobilenumber: "+918838461032",
+    },
+    {
+      name: "Thilagavathi V",
+      role: "Open Tech Co-Ordinator",
+      imageUrl:
+        "https://blogger.googleusercontent.com/img/a/AVvXsEgtamlGyzDuvBK8GLIQ_YNHNOIQrenRpn18BLau7ZgkPD2s9IA05nWPkxtT36mRnLjplPhbzHH_6Y9g7Qa8VzTDXeXRW0AQeVqA-KGuCBT-DIXBhbmOrFNG1Z-GHduw2vofjoFcDxPykBKsWkrbCOq4RLJjHeqvwl0Qf0W7WZSYtndd4zVWEsFUFOP4Rp8",
+      mobilenumber: "+919840137428",
+    },
+    {
+      name: "Thilagavathi V",
+      role: "Open Tech Co-Ordinator",
+      imageUrl:
+        "https://blogger.googleusercontent.com/img/a/AVvXsEgtamlGyzDuvBK8GLIQ_YNHNOIQrenRpn18BLau7ZgkPD2s9IA05nWPkxtT36mRnLjplPhbzHH_6Y9g7Qa8VzTDXeXRW0AQeVqA-KGuCBT-DIXBhbmOrFNG1Z-GHduw2vofjoFcDxPykBKsWkrbCOq4RLJjHeqvwl0Qf0W7WZSYtndd4zVWEsFUFOP4Rp8",
+      mobilenumber: "+919840137428",
+    },
+    {
+      name: "Thilagavathi V",
+      role: "Open Tech Co-Ordinator",
+      imageUrl:
+        "https://blogger.googleusercontent.com/img/a/AVvXsEgtamlGyzDuvBK8GLIQ_YNHNOIQrenRpn18BLau7ZgkPD2s9IA05nWPkxtT36mRnLjplPhbzHH_6Y9g7Qa8VzTDXeXRW0AQeVqA-KGuCBT-DIXBhbmOrFNG1Z-GHduw2vofjoFcDxPykBKsWkrbCOq4RLJjHeqvwl0Qf0W7WZSYtndd4zVWEsFUFOP4Rp8",
+      mobilenumber: "+919840137428",
+    },
+    {
+      name: "Thilagavathi V",
+      role: "Open Tech Co-Ordinator",
+      imageUrl:
+        "https://blogger.googleusercontent.com/img/a/AVvXsEgtamlGyzDuvBK8GLIQ_YNHNOIQrenRpn18BLau7ZgkPD2s9IA05nWPkxtT36mRnLjplPhbzHH_6Y9g7Qa8VzTDXeXRW0AQeVqA-KGuCBT-DIXBhbmOrFNG1Z-GHduw2vofjoFcDxPykBKsWkrbCOq4RLJjHeqvwl0Qf0W7WZSYtndd4zVWEsFUFOP4Rp8",
+      mobilenumber: "+919840137428",
+    },
 
     // More people...
   ];
@@ -41,7 +76,7 @@ function Contact() {
                       />
                       <div className="space-y-2">
                         <div className="text-lg leading-6 font-medium space-y-1">
-                          <h3>{person.name}</h3>
+                          <h3 className="text-white">{person.name}</h3>
                           <p className="text-indigo-600">{person.role}</p>
                         </div>
                         <ul
