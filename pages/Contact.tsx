@@ -21,29 +21,29 @@ function Contact() {
       name: "Ganesh P",
       role: "Tech Trek Co-Ordinator",
       imageUrl:
-        "https://blogger.googleusercontent.com/img/a/AVvXsEgGHr4jx8z0A6pdB4jVFzWNw6v4ksPJ3ipxmbSORcSkZDZCtNBqwGlOk2KLQC5_isk7Ahmc9o8UwhoLUW3RwvWV0ZvaudnGTgrIul4-UUnCnyb1L6hmlnWB0c1TsPqIWRErmrvbp8_Gu4ZJvwqIjfd97u9ian1AaeqiCS5Ynr_LKdNBYTVKLW_YCw3epSU",
+        "https://blogger.googleusercontent.com/img/a/AVvXsEiZ9E9SHFugsG6GXdMUZ7H_vw3v_hxgzP4NJgi0ZTfrDo9pfly7l2_AcEsIm9hZGO2p01_heXJzmKj82HNhPk0tQ5-n-cgjt-scU5yVAPGE3XYcx5GMzR6Uvuf1EvSAJUPdD-dMm1PdvL4aIdGQbJ9erckttA0QVMhsK4eCYcv3ds0KkG_mvbKqKWhPFuM",
       mobilenumber: "+916383328121",
     },
     {
-      name: "Thilagavathi V",
-      role: "Open Tech Co-Ordinator",
+      name: "Krishna Prasad S",
+      role: "Codeless Canvas Co-Ordinator",
       imageUrl:
-        "https://blogger.googleusercontent.com/img/a/AVvXsEgtamlGyzDuvBK8GLIQ_YNHNOIQrenRpn18BLau7ZgkPD2s9IA05nWPkxtT36mRnLjplPhbzHH_6Y9g7Qa8VzTDXeXRW0AQeVqA-KGuCBT-DIXBhbmOrFNG1Z-GHduw2vofjoFcDxPykBKsWkrbCOq4RLJjHeqvwl0Qf0W7WZSYtndd4zVWEsFUFOP4Rp8",
-      mobilenumber: "+919840137428",
+        "https://blogger.googleusercontent.com/img/a/AVvXsEiO389hHD06k7gW_96l5cxBL7wn6j92EBnhaB1_57OLMMFd-1vJTZD-X9YnRXj5HdLBmk5pZrJsNUhSbShDG8bvArvPPo3EDKCOfDV62F4mYblCn19vUVQ5bqFnmzZEM2tzVn49wiVtkbCDAcZ7EnWX5CGeo5nTHYLu81NbTIT6W6erWa86mYu6BM7r5aw",
+      mobilenumber: "+919701300474",
     },
     {
-      name: "Thilagavathi V",
-      role: "Open Tech Co-Ordinator",
+      name: "Kokila J",
+      role: "Brain Wave Co-Ordinator",
       imageUrl:
-        "https://blogger.googleusercontent.com/img/a/AVvXsEgtamlGyzDuvBK8GLIQ_YNHNOIQrenRpn18BLau7ZgkPD2s9IA05nWPkxtT36mRnLjplPhbzHH_6Y9g7Qa8VzTDXeXRW0AQeVqA-KGuCBT-DIXBhbmOrFNG1Z-GHduw2vofjoFcDxPykBKsWkrbCOq4RLJjHeqvwl0Qf0W7WZSYtndd4zVWEsFUFOP4Rp8",
-      mobilenumber: "+919840137428",
+        "https://blogger.googleusercontent.com/img/a/AVvXsEgKmjolCIvBibZs_2TtzU32F1xBzxk_s0SBsizhBQqIS0Wb4_Yl0keWDo3kQ6mrpsKbrBwsdBM2HAMye9dPSFj1QgWFa1NvMijv2jds36mVb9zq7jdlcscC6jjVKEgwAIP5lgZo9DXNBRtkzo5ObCiRp4nJ2u2uZS-q6S9yGvrSi0Fd8EWC7EBlzGrRzMQ",
+      mobilenumber: "+918939324868",
     },
     {
-      name: "Thilagavathi V",
-      role: "Open Tech Co-Ordinator",
+      name: "Nagipragalathan N",
+      role: "Code Quest Co-Ordinator",
       imageUrl:
-        "https://blogger.googleusercontent.com/img/a/AVvXsEgtamlGyzDuvBK8GLIQ_YNHNOIQrenRpn18BLau7ZgkPD2s9IA05nWPkxtT36mRnLjplPhbzHH_6Y9g7Qa8VzTDXeXRW0AQeVqA-KGuCBT-DIXBhbmOrFNG1Z-GHduw2vofjoFcDxPykBKsWkrbCOq4RLJjHeqvwl0Qf0W7WZSYtndd4zVWEsFUFOP4Rp8",
-      mobilenumber: "+919840137428",
+        "https://media.licdn.com/dms/image/D4E03AQFFCSBIM0Jh_w/profile-displayphoto-shrink_800_800/0/1692806057424?e=1698883200&v=beta&t=TZT16vbvzj7ZdYQK_NUIjv0E_1mCpynyl_NDE0Hzvx0",
+      mobilenumber: "+917401268091",
     },
 
     // More people...
