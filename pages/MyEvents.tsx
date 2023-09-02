@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Link from "next/link";
+import Head from "next/head";
 
 interface Event {
   id: number;
@@ -37,6 +38,14 @@ function MyEvents() {
 
   return (
     <div>
+      <Head>
+        <title>Jaya Foss Club/MyEvents</title>
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href="https://jayafossclub.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage%205.654c4765.png&w=96&q=75"
+        />
+      </Head>
       <div className="bg-[url(../Assets/BG.png)] pb-20 bg-no-repeat bg-center bg-cover ">
         <Header />
         <div className="relative isolate px-6 bg-[url(../Assets/BG.png)] lg:px-8">

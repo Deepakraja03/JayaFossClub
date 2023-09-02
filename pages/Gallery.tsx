@@ -8,6 +8,7 @@ import F2014 from "../Assets/gallery/2014/front_cover 2014.jpg";
 import F2020 from "../Assets/gallery/2020/front_cover 2020.jpg";
 import F2022 from "../Assets/gallery/2022/front_cover 2022.jpg";
 import F2023 from "../Assets/gallery/2022/front_cover 2022.jpg";
+import Head from "next/head";
 
 function Gallery() {
   const latestgallery = [
@@ -59,6 +60,14 @@ function Gallery() {
 
   return (
     <div className="bg-[url(../Assets/BG.png)] pb-20 bg-no-repeat bg-center bg-cover ">
+      <Head>
+        <title>Jaya Foss Club/Gallery</title>
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href="https://jayafossclub.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage%205.654c4765.png&w=96&q=75"
+        />
+      </Head>
       <Header />
       <div className="relative isolate px-6 bg-[url(../Assets/BG.png)] lg:px-8">
         <div className="lg:px-24 pt-10 pb-10">
