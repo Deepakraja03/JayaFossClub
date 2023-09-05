@@ -93,7 +93,7 @@ export default function Home() {
               <div className="flex my-5 justify-center">
                 <img
                   src="https://www.softwarefreedomday.org/images/warptheme/logo.png"
-                  className="h-20 w-44"
+                  className="h-20 w-62"
                   alt=""
                 />
               </div>
