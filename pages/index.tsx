@@ -90,8 +90,12 @@ export default function Home() {
               <div className="relative rounded-full mx-24 lg:mx-96  text-center text-md font-bold leading-6 text-[#F2F4F8] ring-1 ring-[#FFFFFF4D] hover:ring-[#FFFFFF4D]">
                 FOSSAGE&apos;23{" "}
               </div>
-              <div className="flex justify-center">
-                <Image src={Softwarlogo} alt="" />
+              <div className="flex my-5 justify-center">
+                <img
+                  src="https://www.softwarefreedomday.org/images/warptheme/logo.png"
+                  className="h-20 w-44"
+                  alt=""
+                />
               </div>
             </div>
 
