@@ -3,6 +3,24 @@ import Header from "./components/Header";
 import Head from "next/head";
 
 function Contact() {
+  const main = [
+    {
+      name: "Emmanuel",
+      role: "Chief Head",
+      imageUrl:
+        "https://blogger.googleusercontent.com/img/a/AVvXsEjmclIF6ph1XLaNW_54gceBcvUmNHfQO-Mc4ORxnNGBTfBjHB-y1K5D8C2ZMXHBgGXId_LPMZ2wyIEtKuYX42Q3QD5Uy7c9wog5Yis-uB_tg6TZL65__sGONFsOmtnWcSUvq4MqYw9w5OQsNvtc0WEGoukG3O1q2LFqslkpMybrzXnedy7pytlF_s2kTzo",
+      mobilenumber: "+917418421892",
+    },
+    {
+      name: "Maheshwaran",
+      role: "Co-Chief Head",
+      imageUrl:
+        "https://blogger.googleusercontent.com/img/a/AVvXsEifFlBmP90P1S033Hfy7aFKbXSHQ-xfsvghwvwRKjuOcqt9bVg2tIYYzqbmWP_pMtTyHk0uFuwEd8FouLBuG6xuHBN4ZvYCXc6auL9bJM1SKmAZTADls4x8DU2IyNWVi7PIXbmvAGhwjoDbxKZbihQnEpj1lL2IHytzFsYiVRZaTZZU05sUuTzVxneB-wA",
+      mobilenumber: "+917904749633",
+    },
+
+    // More people...
+  ];
   const people = [
     {
       name: "Thilagavathi V",
@@ -64,6 +82,49 @@ function Contact() {
       <div className="relative isolate px-6 pb-20 bg-[url(../Assets/BG.png)] lg:px-8">
         <div className="lg:px-24  pb-9">
           <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-20">
+            <div className="space-y-12 mb-10 ">
+              <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
+                <h2 className="text-3xl font-bold text-gray-200 tracking-tight sm:text-4xl">
+                  Main Co-ordinators
+                </h2>
+                <p className="text-xl text-gray-500"></p>
+              </div>
+              <ul
+                role="list"
+                className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl"
+              >
+                {main.map((person) => (
+                  <li key={person.name}>
+                    <div className="space-y-6">
+                      <img
+                        className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
+                        src={person.imageUrl}
+                        alt=""
+                      />
+                      <div className="space-y-2">
+                        <div className="text-lg leading-6 font-medium space-y-1">
+                          <h3 className="text-white">{person.name}</h3>
+                          <p className="text-indigo-600">{person.role}</p>
+                        </div>
+                        <ul
+                          role="list"
+                          className="flex justify-center space-x-5"
+                        >
+                          <li>
+                            <a href={`tel:${person.mobilenumber}`}>
+                              {" "}
+                              <p className="text-gray-200 bg-black p-2 rounded-xl hover:text-gray-500">
+                                📞 {person.mobilenumber}
+                              </p>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
             <div className="space-y-12">
               <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
                 <h2 className="text-3xl font-bold text-gray-200 tracking-tight sm:text-4xl">
