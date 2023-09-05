@@ -91,7 +91,7 @@ function Contact() {
               </div>
               <ul
                 role="list"
-                className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl"
+                className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-2 sm:space-y-0 lg:grid-cols-2 lg:mx-56"
               >
                 {main.map((person) => (
                   <li key={person.name}>
