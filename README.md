@@ -74,3 +74,6 @@ If you have any questions, feel free to open an issue or reach out to the mainta
 ---
 
 Join us in making event management hassle-free and contributing to the spirit of Software Free Day!
+
+
+
