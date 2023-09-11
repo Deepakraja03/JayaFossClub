@@ -6,20 +6,18 @@ function Contact() {
   const main = [
     {
       name: "Emmanuel",
-      role: "Chief Head",
+      role: "President",
       imageUrl:
         "https://blogger.googleusercontent.com/img/a/AVvXsEjmclIF6ph1XLaNW_54gceBcvUmNHfQO-Mc4ORxnNGBTfBjHB-y1K5D8C2ZMXHBgGXId_LPMZ2wyIEtKuYX42Q3QD5Uy7c9wog5Yis-uB_tg6TZL65__sGONFsOmtnWcSUvq4MqYw9w5OQsNvtc0WEGoukG3O1q2LFqslkpMybrzXnedy7pytlF_s2kTzo",
       mobilenumber: "+917418421892",
     },
     {
       name: "Maheshwaran",
-      role: "Co-Chief Head",
+      role: "Vice President",
       imageUrl:
         "https://blogger.googleusercontent.com/img/a/AVvXsEifFlBmP90P1S033Hfy7aFKbXSHQ-xfsvghwvwRKjuOcqt9bVg2tIYYzqbmWP_pMtTyHk0uFuwEd8FouLBuG6xuHBN4ZvYCXc6auL9bJM1SKmAZTADls4x8DU2IyNWVi7PIXbmvAGhwjoDbxKZbihQnEpj1lL2IHytzFsYiVRZaTZZU05sUuTzVxneB-wA",
       mobilenumber: "+917904749633",
     },
-
-    // More people...
   ];
   const people = [
     {
