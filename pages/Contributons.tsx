@@ -3,14 +3,14 @@ import Header from "./components/Header";
 import Head from "next/head";
 import Counter from "./components/Counter";
 
-interface Contributor {
+interface Contributon {
   name: string;
   Image: string;
   description: string;
 }
 
-function Contributors() {
-  const contributors: Contributor[] = [
+function Contributons() {
+  const contributons: Contributon[] = [
     {
       name: "Nagipragalathan N",
       Image:
@@ -93,7 +93,7 @@ function Contributors() {
                   Meet Our Top Contributors
                 </p>
               </div>
-              {contributors.map((person, index) => (
+              {contributons.map((person, index) => (
                 <div
                   key={index}
                   className="gap-5 bg-white mb-8 rounded-lg dark:bg-gray-900 items-center py-8 mt-4 px-4 mx-auto max-w-screen-xl lg:grid lg:order-2 lg:grid-cols-2 lg:py-5 lg:px-6"
