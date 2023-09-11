@@ -105,7 +105,7 @@ function Contributors() {
                         src={person.Image}
                         alt={`office content ${index + 1}`}
                       />
-                      <p className="mt-4 w-full text-gray-200 font-semibold text-lg text-center rounded-lg">
+                      <p className="mt-4 w-full  text-gray-200 font-bold text-lg text-center rounded-lg">
                         {person.name}
                       </p>
                     </div>
