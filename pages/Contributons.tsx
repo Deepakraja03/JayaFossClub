@@ -123,4 +123,4 @@ function Contributons() {
   );
 }
 
-export default Contributors;
+export default Contributons;
