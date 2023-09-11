@@ -16,7 +16,7 @@ function Contributors() {
       Image:
         "https://media.licdn.com/dms/image/D4E03AQFFCSBIM0Jh_w/profile-displayphoto-shrink_800_800/0/1692806057424?e=1698883200&v=beta&t=TZT16vbvzj7ZdYQK_NUIjv0E_1mCpynyl_NDE0Hzvx0",
       description:
-        "TerminalDesigner is like a superhero for your terminal! 🦸‍♂️ This awesome Python package takes your plain text in the terminal and turns it into a work of art. Imagine creating stunning text-based designs that make your command-line apps look amazing! Whether you're a code wizard or just want to add some pizzazz to your terminal projects, TerminalDesigner is here to make your text-based dreams come true. Meet the brain behind this magic, NagriPragalathan N! 🚀 ",
+        "Introducing DJOptima, your Django project's ultimate wingman, built to simplify deployment, especially for Vercel hosting. EnigmaShield, a Python module that acts as your code's guardian, encrypting it all, even runtime values. Elevate your terminal game with TerminalDesigner, a Python package for dynamic text-based designs. And don't forget pylowcode, the user-friendly website testing hero with JSON scripting and various report formats. Meet the brain behind this magic, NagriPragalathan N! 🚀💻🦸‍♂️ ",
     },
     {
       name: "Thilagavathi V",
@@ -38,6 +38,20 @@ function Contributors() {
         "https://blogger.googleusercontent.com/img/a/AVvXsEj4EhqLbkwC44723assY0HN5j_Ng3SNKsPlK22Ygyr3ZMy8Oc4oulZ2tm0wtutTlh3dTqMA7TOsX_s7VyC5dJIChAfAORqAAOYRLKpyrM5OIa5q_LZ3hGwCgRO9OPdYCH0nnNQ3wv7A2-UTbvt79JOyJs1yfyqmme3Tl8YVfc3aj4OeEh1nC5SUJHf3ECs",
       description:
         "During GSSOC 23, I proudly ranked among the top 200 contributors out of approximately 1500 participants, thanks to my dedicated work on Pluto-UI and Love-Simple-UI. For Pluto-UI, I meticulously optimized the checkout process, refined UI elements, and developed a comprehensive design system, elevating the user experience. In Love-Simple-UI, I led a team in establishing a design system centered on simplicity and sophistication. These contributions have left a lasting impact, and I'm grateful for the opportunity to have played a role in enhancing user experiences. Meet the powerhouse behind these efforts, Rishika SV! 🌟🚀",
+    },
+    {
+      name: "Ganesh P",
+      Image:
+        "https://blogger.googleusercontent.com/img/a/AVvXsEiZ9E9SHFugsG6GXdMUZ7H_vw3v_hxgzP4NJgi0ZTfrDo9pfly7l2_AcEsIm9hZGO2p01_heXJzmKj82HNhPk0tQ5-n-cgjt-scU5yVAPGE3XYcx5GMzR6Uvuf1EvSAJUPdD-dMm1PdvL4aIdGQbJ9erckttA0QVMhsK4eCYcv3ds0KkG_mvbKqKWhPFuM",
+      description:
+        "Neo Locker, the Document Verification System, is your digital fortress powered by blockchain and IPFS tech. With a user-friendly interface, it keeps your documents safe, sound, and time-stamped. I'm Ganesh P, a dedicated contributor, here to enhance Neo Locker's features, code quality, and user experience for a thriving community of passionate developers. Join us in the quest for secure, accessible document management! 🔒🚀",
+    },
+    {
+      name: "Karthik S",
+      Image:
+        "https://blogger.googleusercontent.com/img/a/AVvXsEiYA7nOpUnwkhQkxNZPtjRHtKKH5n6ZDW09uvv-ZnrDept9wgBG8IE31yUQlWJrZLrkqR8sTJbGf8i4YFdb6AFYbX7dRnGUltDk9WQlLXzhSOxDMI1EnK2dnDMEgQQFoJWyc1h4R33FpYBo1pNwhXPuLTXgu8ltPzLDMQmZckxVnFFICzs1PSLcoAvizSg",
+      description:
+        "Meet the Crowdfunding DApp, powered by blockchain tech (Ethereum or Binance Smart Chain), enabling decentralized fundraising, transparency, and global reach. Funds are locked securely in smart contracts, with public transactions. Customizable campaigns, community governance, and applications in startup funding, charity, creative projects, product development, real estate investment, and political campaigns. Karthik S leads the charge! 🚀🌐🤝",
     },
   ];
 
@@ -96,7 +110,7 @@ function Contributors() {
                         {person.name}
                       </p>
                     </div>
-                    <div className=" text-gray-200 sm:text-lg dark:text-gray-200">
+                    <div className=" text-gray-200 mt-2 lg:mt-0 px-1 sm:text-lg dark:text-gray-200">
                       <p className="mb-4">{person.description}</p>
                     </div>
                   </>
