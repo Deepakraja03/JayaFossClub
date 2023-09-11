@@ -56,17 +56,20 @@ function Contributors() {
         <div className="relative isolate px-6 bg-[url(../Assets/BG.png)] lg:px-8">
           <div className="lg:px-24 pt-10 pb-10">
             <section className="">
-              <div className="text-5xl pt-20 text-center text-white font-bold">
-                Join the Open Source Revolution:
-                <br /> Become a Contributor
-                <p className="text-center text-white text-lg pt-5 lg:mx-[200px]">
+              <div className="text-4xl lg:text-5xl  lg:pt-20 text-center text-white ">
+                <p className="font-bold">
+                  {" "}
+                  Join the Open Source Revolution:
+                  <br /> Become a Contributor
+                </p>
+                <p className="text-center text-white lg:text-xl text-lg pt-5 lg:mx-[200px]">
                   Here, we celebrate the generous individuals and organizations
                   who are making Software Freedom Day possible. Your support
                   fuels our mission to promote open-source software and digital
                   freedom. Join our Software Freedom Heroes and make a
                   difference today. #SoftwareFreedomHeroes
                 </p>
-                <div className="flex justify-center mt-10 space-x-20 text-center">
+                <div className="flex lg:flex-row font-bold flex-col justify-center mt-10 space-y-4 lg:space-y-0 lg:space-x-20 text-center">
                   <Counter endValue={50} label="Developers" />
                   <Counter endValue={45} label="Open Source Contributors" />
                   <Counter endValue={2} label="Entrepreneurs" />
