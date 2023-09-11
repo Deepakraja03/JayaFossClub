@@ -73,8 +73,7 @@ function Contributors() {
               <div className="text-4xl lg:text-5xl  lg:pt-20 text-center text-white ">
                 <p className="font-bold">
                   {" "}
-                  Join the Open Source Revolution:
-                  <br /> Become a Contributor
+                  Join the Open Source Revolution: Become a Contributor
                 </p>
                 <p className="text-center text-white lg:text-xl text-lg pt-5 lg:mx-[200px]">
                   Here, we celebrate the generous individuals and organizations
@@ -90,8 +89,8 @@ function Contributors() {
                 </div>
               </div>
               <div>
-                <p className="text-center text-white text-5xl my-14 font-bold">
-                  Our Top Contributors
+                <p className="text-center text-white lg:text-5xl text-4xl my-14 font-bold">
+                  Meet Our Top Contributors
                 </p>
               </div>
               {contributors.map((person, index) => (
