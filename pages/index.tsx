@@ -17,11 +17,11 @@ export default function Home() {
     const intervalId = setInterval(() => {
       const now = new Date();
       const currentYear = now.getFullYear();
-      let softwareFreedomDay = new Date(`${currentYear}-09-16T00:00:00`);
+      let softwareFreedomDay = new Date(`${currentYear}-09-21T00:00:00`);
 
       // If Software Freedom Day has already passed for this year, set it to next year
       if (now > softwareFreedomDay) {
-        softwareFreedomDay = new Date(`${currentYear + 1}-09-16T00:00:00`);
+        softwareFreedomDay = new Date(`${currentYear + 1}-09-21T00:00:00`);
       }
 
       const diffInSeconds = Math.floor(

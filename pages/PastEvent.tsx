@@ -36,6 +36,7 @@ const PastEvent: React.FC = () => {
 
     fetchData();
   }, []);
+  
   console.log(events);
   useEffect(() => {
     // Check for token in local storage and update state

@@ -39,6 +39,10 @@ const Dashboard: React.FC = () => {
 
     fetchData();
   }, []);
+  const currentDate = new Date();
+
+  // Filter events based on the date
+  const upcomingEvents = events.filter(event => new Date(event.date) >= currentDate);
   console.log(events);
   useEffect(() => {
     // Check for token in local storage and update state
@@ -87,12 +91,12 @@ const Dashboard: React.FC = () => {
                   <p className="lg:text-3xl text-xl text-black text-left pb-5  font-bold "></p>
                   <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-5 lg:max-w-7xl lg:px-8">
                     <div className="   grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-                      {events.length === 0 ? (
+                      {upcomingEvents.length === 0 ? (
                         <p className="text-center">
                           No Upcoming Events Created.
                         </p>
                       ) : (
-                        events.map((event) => (
+                        upcomingEvents.map((event) => (
                           <div
                             key={event?._id}
                             className="group bg-gray-200 rounded-lg text-center relative"
